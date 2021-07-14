@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour, Control.IPlayerActions
+public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
 {
+    public static Action OnPlayerDeath;
+
     Vector2 _inputVector;
     [SerializeField]
     Animator _anim;
@@ -20,6 +23,8 @@ public class Player : MonoBehaviour, Control.IPlayerActions
     [SerializeField]
     float _rapidfireRate = 0.125f;
     WaitForSeconds _rapidfireWait;
+
+
     enum WeaponStrength
     {
         Basic,
@@ -31,10 +36,13 @@ public class Player : MonoBehaviour, Control.IPlayerActions
 
     enum Weapon
     {
-        Blaster
+        Blaster,
+        SplitFire
     };
     [SerializeField]
     Weapon _currentWeapon = Weapon.Blaster;
+
+    public int Health => (int)_currentStrength;
 
 
     // Start is called before the first frame update
@@ -96,5 +104,12 @@ public class Player : MonoBehaviour, Control.IPlayerActions
             obj.transform.position = _blastOrigin.position;
             yield return _rapidfireWait;
         }
+    }
+
+    public void Damage()
+    {
+        _currentStrength--;
+        if (Health < 0)
+            Destroy(this, 1f);
     }
 }
