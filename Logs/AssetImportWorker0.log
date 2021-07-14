@@ -15,11 +15,11 @@ Z:/Unity Projects/Galaxy-Blaster-Z
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56816
+51464
 Successfully changed project path to: Z:/Unity Projects/Galaxy-Blaster-Z
 Z:/Unity Projects/Galaxy-Blaster-Z
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 22.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
 [Subsystems] Discovering subsystems at path Z:/Program Files/Unity Editors/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,45 +35,125 @@ Initialize mono
 Mono path[0] = 'Z:/Program Files/Unity Editors/2020.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'Z:/Program Files/Unity Editors/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'Z:/Program Files/Unity Editors/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: Z:/Program Files/Unity Editors/2020.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: Z:/Program Files/Unity Editors/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001398 seconds.
+Registered in 0.001360 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 21.70 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 32.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.602 seconds
+- Completed reload, in  1.599 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001380 seconds.
+Registered in 0.001374 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 35.73 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.740 seconds
+- Completed reload, in  0.962 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 57.3 MB.
-System memory in use after: 57.3 MB.
+Unloading 1414 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.0 MB.
+System memory in use after: 139.0 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1560.
-Total: 1.669100 ms (FindLiveObjects: 0.115700 ms CreateObjectMapping: 0.034200 ms MarkObjects: 1.444100 ms  DeleteObjects: 0.073700 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1859.
+Total: 1.914900 ms (FindLiveObjects: 0.256500 ms CreateObjectMapping: 0.058900 ms MarkObjects: 1.520300 ms  DeleteObjects: 0.077800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3106d81e14175b7109796116b50b2db6') in 0.010972 seconds
-  Import took 0.012563 seconds .
+  path: Assets/3D/Props/Weapons/Missiles_09/FBX/M0702RaytheonMIM-104PatriotPAC-1.fbx
+  artifactKey: Guid(b67b05dafd37ef14ebf836485a08df5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Weapons/Missiles_09/FBX/M0702RaytheonMIM-104PatriotPAC-1.fbx using Guid(b67b05dafd37ef14ebf836485a08df5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d744a77b46334994378961ee70f4d78') in 0.141525 seconds
+  Import took 0.143771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.531819 seconds.
+  path: Assets/3D/Props/Weapons/Missiles_09/FBX/M0702RaytheonRIM-66Standard.fbx
+  artifactKey: Guid(eb7307554744384448d517a8e5027983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Weapons/Missiles_09/FBX/M0702RaytheonRIM-66Standard.fbx using Guid(eb7307554744384448d517a8e5027983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2b80f4a011edf6daa4176a9aea8a25') in 0.022894 seconds
+  Import took 0.025244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.416024 seconds.
+  path: Assets/3D/Props/Weapons/Missiles_09/FBX/M0702ThalesCrotale.fbx
+  artifactKey: Guid(11ce167e40251634f8b89ced3e9f7aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Weapons/Missiles_09/FBX/M0702ThalesCrotale.fbx using Guid(11ce167e40251634f8b89ced3e9f7aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf5a9dba487fc775e2adacdcd468096') in 0.018539 seconds
+  Import took 0.020808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.781911 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/BlueShield.fbx
+  artifactKey: Guid(adf9da301e8f8a94fb4789b155ae2d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/BlueShield.fbx using Guid(adf9da301e8f8a94fb4789b155ae2d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0e262d9f008a06a2e2ca01b261fda7') in 0.034537 seconds
+  Import took 0.036960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.085590 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/Coin01.fbx
+  artifactKey: Guid(29393d104cdfa8b4aa356b09565c6678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/Coin01.fbx using Guid(29393d104cdfa8b4aa356b09565c6678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852b719e986aa9975adb0b7cdb02d9c5') in 0.020482 seconds
+  Import took 0.022704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.646101 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/Coin02.fbx
+  artifactKey: Guid(d8d875d1664f61841886f3b64c3b35ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/Coin02.fbx using Guid(d8d875d1664f61841886f3b64c3b35ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64cf0ffc82e8b157055c27f7adb600d8') in 0.020008 seconds
+  Import took 0.022978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.116913 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/CoinStack01.fbx
+  artifactKey: Guid(290cf825a89bdf24eb89c6f75ede27ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/CoinStack01.fbx using Guid(290cf825a89bdf24eb89c6f75ede27ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c095ee002b52333d1eadecd5359eae') in 0.023263 seconds
+  Import took 0.026030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.152218 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/CoinStack02.fbx
+  artifactKey: Guid(5e9a5cf2102437041a74b280f60dd6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/CoinStack02.fbx using Guid(5e9a5cf2102437041a74b280f60dd6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d9ceb056b410324ddf8ae7d7109764') in 0.016515 seconds
+  Import took 0.018780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.161444 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/GreenShield.fbx
+  artifactKey: Guid(4d77d669407d03447bf923fbe16a1d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/GreenShield.fbx using Guid(4d77d669407d03447bf923fbe16a1d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9720199d0d44869b8d1c86c34114350') in 0.020324 seconds
+  Import took 0.023719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.788625 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/Upgrade.fbx
+  artifactKey: Guid(736db7e6b35a5df42bb70c9eeef2605d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/Upgrade.fbx using Guid(736db7e6b35a5df42bb70c9eeef2605d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc33c02180564f62928e57e3186e690') in 0.019241 seconds
+  Import took 0.022003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.554872 seconds.
+  path: Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/YellowShield.fbx
+  artifactKey: Guid(1c33db686a6591245b76e3fee765b697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Props/Tools/3D_Game_Icons_02/FBX/YellowShield.fbx using Guid(1c33db686a6591245b76e3fee765b697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7436ca6b456e2aec7d43997fc1cd9013') in 0.020183 seconds
+  Import took 0.022727 seconds .
 
