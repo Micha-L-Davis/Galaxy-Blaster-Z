@@ -10,12 +10,37 @@ public class Player : MonoBehaviour, Control.IPlayerActions
     Animator _anim;
     [SerializeField]
     float _speed = 5f;
+    [SerializeField]
+    PoolManager _poolManager;
+    [SerializeField]
+    Transform _blastOrigin;
+    [SerializeField]
+    float _blastCooldown = 0.15f;
+    float _canBlast = -1f;
+    [SerializeField]
+    float _rapidfireRate = 0.125f;
+    WaitForSeconds _rapidfireWait;
+    enum WeaponStrength
+    {
+        Basic,
+        Intermediate,
+        Advanced
+    };
+    [SerializeField]
+    WeaponStrength _currentStrength = WeaponStrength.Basic;
+
+    enum Weapon
+    {
+        Blaster
+    };
+    [SerializeField]
+    Weapon _currentWeapon = Weapon.Blaster;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _rapidfireWait = new WaitForSeconds(_rapidfireRate);
     }
 
     // Update is called once per frame
@@ -30,7 +55,22 @@ public class Player : MonoBehaviour, Control.IPlayerActions
 
     public void OnFire(InputAction.CallbackContext context)
     {
-        //object pool blaster bolts
+        if (context.ReadValueAsButton())
+        {
+            switch (_currentWeapon)
+            {
+                case Weapon.Blaster:
+                    if (Time.time > _canBlast)
+                    {
+                        StartCoroutine(BlasterFireRoutine());
+                    }
+
+                    break;
+                default:
+                    break;
+            }
+
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -44,6 +84,17 @@ public class Player : MonoBehaviour, Control.IPlayerActions
         {
             _anim.SetBool("Climbing", false);
             _anim.SetBool("Diving", false);
+        }
+    }
+
+    IEnumerator BlasterFireRoutine()
+    {
+        _canBlast = Time.time + _blastCooldown;
+        for (int i = 0; i <= (int)_currentStrength; i++)
+        {
+            GameObject obj = _poolManager.RequestPoolObject(_poolManager._blastPool);
+            obj.transform.position = _blastOrigin.position;
+            yield return _rapidfireWait;
         }
     }
 }
