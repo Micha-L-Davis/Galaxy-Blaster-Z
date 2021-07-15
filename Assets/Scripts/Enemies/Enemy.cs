@@ -25,15 +25,16 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     {
         if (_concealed)
         {
-            Debug.Log("Minion Damage Avoided Due To Concealment");
+            Debug.Log("Enemy Damage Avoided Due To Concealment");
             return;
         }
-        Debug.Log("Minion Taking Damage");
+        Debug.Log("Enemy Taking Damage");
         _health--;
         if (Health < 1)
         {
             if (OnEnemyDeath != null)
             {
+                Debug.Log("Sending Death Notice");
                 OnEnemyDeath(this.gameObject);
             }
             Destroy(this.gameObject);
@@ -43,7 +44,7 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected void OnTriggerEnter(Collider other)
     {
         IDamageable i = other.GetComponent<IDamageable>();
-        if (i != null)
+        if (i != null && other.tag != "Enemy")
         {
             i.Damage();
         }

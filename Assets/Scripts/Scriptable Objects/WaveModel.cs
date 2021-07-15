@@ -6,31 +6,38 @@ using UnityEngine;
 public class WaveModel : ScriptableObject
 {
     [SerializeField]
-    List<GameObject> _members;
-    WaitForSeconds _intervalWait;
+    int _waveNumber;
     [SerializeField]
+    List<GameObject> _members;
+    List<GameObject> _spawned;
     float _intervalDuration;
+    
 
-    void LaunchInterval()
+    public IEnumerator LaunchInterval()
     {
-        //make this a coroutine, trigger the coroutine from the spawn manager
+        _spawned = new List<GameObject>();
+        Debug.Log("Listening for Enemy Deaths");
+        Enemy.OnEnemyDeath += RemoveMember;
         foreach (GameObject obj in _members)
         {
             _intervalDuration = Random.Range(.5f, 1f);
-            //instantiate the obj
-            //yield return _intervalWait;
+            GameObject enemy = Instantiate(obj);
+            _spawned.Add(enemy);
+            Debug.Log("Object spawned. Waiting " + _intervalDuration + " seconds for next spawn.");
+            Debug.Log("There are " + _spawned.Count + " enemies spawned");
+            yield return new WaitForSeconds(_intervalDuration);
         }
     }
 
     void RemoveMember(GameObject obj)
     {
-        _members.Remove(obj);
+        _spawned.Remove(obj);
+        Debug.Log("Enemy removed. There are " + _spawned.Count + " remaining in this wave");
     }
 
-    void Awake()
+    public bool EnemyisAlive()
     {
-        _intervalWait = new WaitForSeconds(_intervalDuration);
-        Enemy.OnEnemyDeath += RemoveMember;
-        SpawnManager.OnWaveStart += LaunchInterval;
+        Debug.Log("Checking the list");
+        return _spawned.Count > 0;
     }
 }
