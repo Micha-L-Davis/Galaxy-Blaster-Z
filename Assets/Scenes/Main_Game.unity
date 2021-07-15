@@ -20343,6 +20343,54 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1961475293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961475295}
+  - component: {fileID: 1961475294}
+  m_Layer: 0
+  m_Name: Spawn Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1961475294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961475293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f29730086f8f241ade1f0bf1d54ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waves:
+  - {fileID: 11400000, guid: 502016b5817604c46b27d213c0639ee5, type: 2}
+  - {fileID: 11400000, guid: a1e5d92d6ea42a8419729a2b29ed57d4, type: 2}
+  - {fileID: 11400000, guid: dca8ad2f14f06ad43bb41118d4f7b145, type: 2}
+  - {fileID: 11400000, guid: 13b3a79f02a628a4386a962087706d99, type: 2}
+--- !u!4 &1961475295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961475293}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9040456, y: 0.7263871, z: -2.7130234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3890046022148644453
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20636,12 +20684,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _anim: {fileID: 8296172667723447123}
-  _speed: 10
+  _speed: 20
   _poolManager: {fileID: 1710280887}
   _blastOrigin: {fileID: 26413948}
   _blastCooldown: 0.5
   _rapidfireRate: 0.125
-  _currentStrength: 0
+  _currentStrength: 2
   _currentWeapon: 0
 --- !u!114 &8296172667723447122
 MonoBehaviour:

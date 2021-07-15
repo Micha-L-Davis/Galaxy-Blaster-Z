@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b00e8768c098946a2d921e6695e142, type: 3}
   m_Name: Wave_2
   m_EditorClassIdentifier: 
-  _waveNumber: 0
-  _members: []
-  _intervalDuration: 0
+  _waveNumber: 2
+  _members:
+  - {fileID: 4487403084527180225, guid: 2251fa39feea9e844b8233fb03def05f, type: 3}
+  - {fileID: 4487403084527180225, guid: 2251fa39feea9e844b8233fb03def05f, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4487403084527180225, guid: 2251fa39feea9e844b8233fb03def05f, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
