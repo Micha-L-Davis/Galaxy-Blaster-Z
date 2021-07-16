@@ -32,7 +32,7 @@ public class SpawnManager : MonoBehaviour
             Debug.Log("Next wave is " + _currentWave);
             if (_currentWave > _waves.Count - 1)
             {
-                Debug.Log("That's not a valid next wave. We're done here.");
+                //Debug.Log("That's not a valid next wave. We're done here.");
                 _stopSpawning = true;
             }
         }

@@ -5,8 +5,10 @@ using UnityEngine;
 public class Blast : MonoBehaviour, IDamageable
 {
     [SerializeField]
-    float _speed = 16;
+    Vector3 _velocity;
     int _health;
+    [SerializeField]
+    Rigidbody _rigidbody;
 
     public int Health => _health;
 
@@ -15,12 +17,20 @@ public class Blast : MonoBehaviour, IDamageable
         gameObject.SetActive(false);
     }
 
+
+    public void FireBlast(Vector3 velocity)
+    {
+        _velocity = velocity;
+    }
+
     private void Update()
     {
-        transform.Translate(Vector3.right * _speed * Time.deltaTime);
-        if (transform.position.x > 32)
+        _rigidbody.velocity = _velocity;
+        //transform.Translate(Vector3.right * _speed * Time.deltaTime);
+        if (transform.position.x > 32 || transform.position.x < -36)
             gameObject.SetActive(false);
     }
+
 
     private void OnTriggerEnter(Collider other)
     {

@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class Minion : Enemy
 {
-
     void Start()
     {
-        _health = 2;    
+        StartCoroutine(EnemyFireRoutine());
     }
-
-
-    void Update()
+    IEnumerator EnemyFireRoutine()
     {
-        
-    }
+        while (!_player.isDead)
+        {
+            yield return new WaitForSeconds(Random.Range(1f, 2f));
 
+            foreach (var item in _blastOrigins)
+            {
+                var blast = PoolManager.Instance.RequestPoolObject(PoolManager.Instance.enemyBlastPool, PoolManager.Instance.enemyBlastPrefab, PoolManager.Instance.enemyBlastContainer);
+                blast.transform.position = item.position;
+                var direction = (_player.transform.position - transform.position);
+                var velocity = direction * _blastForce;
+                blast.GetComponent<Blast>().FireBlast(velocity);
+            }
+
+        }
+    }
 
 }

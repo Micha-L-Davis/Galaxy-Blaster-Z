@@ -14,16 +14,16 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     [SerializeField]
     float _speed = 5f;
     [SerializeField]
-    PoolManager _poolManager;
-    [SerializeField]
     Transform _blastOrigin;
+    [SerializeField]
+    float _blastForce;
     [SerializeField]
     float _blastCooldown = 0.15f;
     float _canBlast = -1f;
     [SerializeField]
     float _rapidfireRate = 0.125f;
     WaitForSeconds _rapidfireWait;
-
+    public bool isDead;
 
     enum WeaponStrength
     {
@@ -70,6 +70,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
                 case Weapon.Blaster:
                     if (Time.time > _canBlast)
                     {
+
                         StartCoroutine(BlasterFireRoutine());
                     }
 
@@ -100,8 +101,10 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         _canBlast = Time.time + _blastCooldown;
         for (int i = 0; i <= (int)_currentStrength; i++)
         {
-            GameObject obj = _poolManager.RequestPoolObject(_poolManager._blastPool);
+            GameObject obj = PoolManager.Instance.RequestPoolObject(PoolManager.Instance.blastPool, PoolManager.Instance.blastPrefab, PoolManager.Instance.blastContainer);
             obj.transform.position = _blastOrigin.position;
+            var velocity = _blastOrigin.forward * _blastForce;
+            obj.GetComponent<Blast>().FireBlast(velocity);
             yield return _rapidfireWait;
         }
     }
@@ -109,7 +112,11 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     public void Damage()
     {
         _currentStrength--;
+        Debug.Log("Hit taken, current strength is " + _currentStrength);
         if (Health < 0)
+        {
+            isDead = true;
             Destroy(this, 1f);
+        }
     }
 }

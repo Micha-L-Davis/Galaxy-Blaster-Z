@@ -10,7 +10,13 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected int _health;
     [SerializeField]
     bool _concealed;
-
+    [SerializeField]
+    protected Player _player;
+    [SerializeField]
+    protected List<Transform> _blastOrigins;
+    [SerializeField]
+    protected float _blastForce;
+    
     public int Health => _health;
 
     public void ToggleConcealment()
