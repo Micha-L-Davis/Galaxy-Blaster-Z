@@ -260,7 +260,8 @@ GameObject:
   - component: {fileID: 1182688188857661877}
   - component: {fileID: 600411040252628331}
   - component: {fileID: 600411040252628330}
-  m_Layer: 0
+  - component: {fileID: 490200859}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,13 +297,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 600411040252628330}
   _speed: 20
-  _poolManager: {fileID: 471970753087926332, guid: 3e85ea763328eb84c9e09d596c675c9a, type: 3}
   _blastOrigin: {fileID: 8896011961219546437}
   _blastForce: 30
   _blastCooldown: 0.5
   _rapidfireRate: 0.125
   isDead: 0
-  _currentStrength: 2
+  _currentStrength: 0
   _currentWeapon: 0
 --- !u!33 &4851865327172240716
 MeshFilter:
@@ -434,6 +434,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &490200859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600411040252628329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.971185, y: 1.7548912, z: 8.356316}
+  m_Center: {x: 0.086816706, y: 0.046015263, z: -1.4885126}
 --- !u!1 &8896011961218545874
 GameObject:
   m_ObjectHideFlags: 0

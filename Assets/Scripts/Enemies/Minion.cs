@@ -12,7 +12,7 @@ public class Minion : Enemy
     {
         while (!_player.isDead)
         {
-            yield return new WaitForSeconds(Random.Range(1f, 2f));
+            yield return new WaitForSeconds(Random.Range(2f, 4f));
 
             foreach (var item in _blastOrigins)
             {

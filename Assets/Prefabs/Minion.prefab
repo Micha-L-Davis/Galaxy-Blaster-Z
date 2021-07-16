@@ -28,7 +28,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4803348870988992970}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4803348870989155818
 GameObject:
@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 4803348870990320106}
   - component: {fileID: 4803348870991418154}
   - component: {fileID: 4803348870989155817}
-  - component: {fileID: 7064901898512052587}
   - component: {fileID: 5113591794114054596}
-  m_Layer: 0
+  - component: {fileID: 8380773110962259483}
+  m_Layer: 8
   m_Name: Minion
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -63,7 +63,6 @@ Transform:
   m_LocalPosition: {x: 42.04, y: 14.53, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
-  - {fileID: 770087818960543040}
   - {fileID: 3692278412283354882}
   - {fileID: 4320950573483228488}
   m_Father: {fileID: 0}
@@ -84,12 +83,10 @@ MonoBehaviour:
   _health: 2
   _concealed: 0
   _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
-  _poolManager: {fileID: 471970753087926332, guid: 3e85ea763328eb84c9e09d596c675c9a, type: 3}
   _blastOrigins:
-  - {fileID: 770087818960543040}
   - {fileID: 3692278412283354882}
   - {fileID: 4320950573483228488}
-  _blastForce: 50
+  _blastForce: 1
 --- !u!33 &4803348870990320106
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -158,20 +155,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!136 &7064901898512052587
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4803348870989155818}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2.0695558
-  m_Height: 13.282577
-  m_Direction: 2
-  m_Center: {x: -5.3126076e-16, y: 0, z: 0.53738403}
 --- !u!54 &5113591794114054596
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -188,36 +171,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &7294912313722468678
-GameObject:
+--- !u!65 &8380773110962259483
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 770087818960543040}
-  m_Layer: 0
-  m_Name: Blast Origin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &770087818960543040
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7294912313722468678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.27, z: 7.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4803348870988992970}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 4803348870989155818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.6678295, y: 2.6744843, z: 12.508019}
+  m_Center: {x: 0, y: 0.2340197, z: 0.6477091}
 --- !u!1 &8869207418927606038
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,5 +212,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4803348870988992970}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

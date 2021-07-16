@@ -68,6 +68,10 @@ PrefabInstance:
       value: Enemy_Blast Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7802243103141442523, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802243103141442523, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}

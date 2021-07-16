@@ -116,7 +116,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         if (Health < 0)
         {
             isDead = true;
-            Destroy(this, 1f);
+            Destroy(this.gameObject, 0.1f);
         }
     }
 }
