@@ -21,6 +21,8 @@ public class Minion : Enemy
                 var direction = (_player.transform.position - transform.position);
                 var velocity = direction * _blastForce;
                 blast.GetComponent<Blast>().FireBlast(velocity);
+                _audio.clip = _blasterClip;
+                _audio.Play(); 
             }
 
         }

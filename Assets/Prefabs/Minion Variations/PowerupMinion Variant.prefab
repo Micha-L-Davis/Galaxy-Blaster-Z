@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3268168177625909391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 41.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870988992970, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870989155817, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bc61251849270d54eb46dc4cb7aed0b2, type: 2}
+    - target: {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_Name
+      value: PowerupMinion Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803348870991418154, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80db53552b1b2104eaeba7cf251d9af2, type: 2}
+    - target: {fileID: 5113591793817987103, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: _health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113591793817987103, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: dropsPowerup
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}

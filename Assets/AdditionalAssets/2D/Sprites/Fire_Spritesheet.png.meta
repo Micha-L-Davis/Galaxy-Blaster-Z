@@ -499,8 +499,8 @@ TextureImporter:
       name: Fire_Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1536
+        x: 1012
+        y: 1537
         width: 256
         height: 256
       alignment: 0
@@ -520,7 +520,7 @@ TextureImporter:
       name: Fire_Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1276
         y: 1536
         width: 256
         height: 256
@@ -541,8 +541,8 @@ TextureImporter:
       name: Fire_Spritesheet_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
+        x: 1546
+        y: 1537
         width: 256
         height: 256
       alignment: 0
@@ -562,8 +562,8 @@ TextureImporter:
       name: Fire_Spritesheet_15
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1536
+        x: 1776
+        y: 1535
         width: 256
         height: 256
       alignment: 0

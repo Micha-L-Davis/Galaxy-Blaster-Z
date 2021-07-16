@@ -26,7 +26,6 @@ public class Blast : MonoBehaviour, IDamageable
     private void Update()
     {
         _rigidbody.velocity = _velocity;
-        //transform.Translate(Vector3.right * _speed * Time.deltaTime);
         if (transform.position.x > 32 || transform.position.x < -36)
             gameObject.SetActive(false);
     }

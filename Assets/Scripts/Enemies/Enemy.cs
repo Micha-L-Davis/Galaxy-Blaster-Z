@@ -16,7 +16,21 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected List<Transform> _blastOrigins;
     [SerializeField]
     protected float _blastForce;
-    
+    [SerializeField]
+    public bool dropsPowerup;
+    [SerializeField]
+    public Animator anim;
+    [SerializeField]
+    SpawnManager _spawnManager;
+    [SerializeField]
+    List<Animator> _explosionAnimators;
+    [SerializeField]
+    protected AudioClip _explosionClip, _blasterClip;
+    [SerializeField]
+    protected AudioSource _audio;
+    [SerializeField]
+    Collider _collider;
+
     public int Health => _health;
 
     public void ToggleConcealment()
@@ -31,19 +45,32 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     {
         if (_concealed)
         {
-            Debug.Log("Enemy Damage Avoided Due To Concealment");
             return;
         }
-        Debug.Log("Enemy Taking Damage");
         _health--;
         if (Health < 1)
         {
+            _collider.enabled = false;
+            foreach (var anim in _explosionAnimators)
+            {
+                anim.SetTrigger("Explode");
+            }
+            _audio.clip = _explosionClip;
+            _audio.Play();
             if (OnEnemyDeath != null)
             {
-                Debug.Log("Sending Death Notice");
                 OnEnemyDeath(this.gameObject);
             }
-            Destroy(this.gameObject);
+            SpawnPowerup();
+            Destroy(this.gameObject, 0.3f);
+        }
+    }
+
+    void SpawnPowerup()
+    {
+        if (dropsPowerup)
+        {
+            Instantiate(_spawnManager.waves[_spawnManager.currentWave].powerupToDrop, transform.position, Quaternion.identity);
         }
     }
 

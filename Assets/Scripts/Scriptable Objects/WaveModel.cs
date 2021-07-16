@@ -5,10 +5,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Wave", menuName = "Wave")]
 public class WaveModel : ScriptableObject
 {
+    [Header ("Required")]
     [SerializeField]
     int _waveNumber;
     [SerializeField]
     List<GameObject> _members;
+    [Header ("Optional")]
+    [SerializeField]
+    public GameObject powerupToDrop;
+    [SerializeField]
+    int _powerUpEnemyPattern;
     List<GameObject> _spawned;
     float _intervalDuration;
     
@@ -23,6 +29,11 @@ public class WaveModel : ScriptableObject
             _intervalDuration = Random.Range(.5f, 1f);
             GameObject enemy = Instantiate(obj);
             _spawned.Add(enemy);
+            Enemy e = enemy.GetComponent<Enemy>();
+            if (e.dropsPowerup)
+            {
+                e.anim.SetInteger("Pattern", _powerUpEnemyPattern);
+            }
             //Debug.Log("Object spawned. Waiting " + _intervalDuration + " seconds for next spawn.");
             //Debug.Log("There are " + _spawned.Count + " enemies spawned");
             yield return new WaitForSeconds(_intervalDuration);

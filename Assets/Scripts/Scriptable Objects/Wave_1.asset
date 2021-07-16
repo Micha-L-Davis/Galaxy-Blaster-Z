@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
-  - {fileID: 4487403084527180225, guid: 2251fa39feea9e844b8233fb03def05f, type: 3}
-  - {fileID: 4487403084527180225, guid: 2251fa39feea9e844b8233fb03def05f, type: 3}
-  - {fileID: 4487403084527180225, guid: 2251fa39feea9e844b8233fb03def05f, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  powerupToDrop: {fileID: 0}
+  _powerUpEnemyPattern: 0

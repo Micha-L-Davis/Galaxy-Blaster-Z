@@ -24,6 +24,14 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     float _rapidfireRate = 0.125f;
     WaitForSeconds _rapidfireWait;
     public bool isDead;
+    [SerializeField]
+    List<Animator> _explosionAnimators;
+    [SerializeField]
+    AudioClip _explosionClip, _blasterClip;
+    [SerializeField]
+    AudioSource _audio;
+
+    public float Speed => _speed;
 
     enum WeaponStrength
     {
@@ -85,6 +93,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     public void OnMove(InputAction.CallbackContext context)
     {
         _inputVector = context.ReadValue<Vector2>();
+
         if (_inputVector.y > 0)
             _anim.SetBool("Climbing", true);
         else if (_inputVector.y < 0)
@@ -93,6 +102,16 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         {
             _anim.SetBool("Climbing", false);
             _anim.SetBool("Diving", false);
+        }
+
+        if (_inputVector.x > 0)
+            _anim.SetBool("Accelerating", true);
+        else if (_inputVector.x < 0)
+            _anim.SetBool("Decelerating", true);
+        else if (_inputVector.x == 0)
+        {
+            _anim.SetBool("Accelerating", false);
+            _anim.SetBool("Decelerating", false);
         }
     }
 
@@ -105,6 +124,8 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             obj.transform.position = _blastOrigin.position;
             var velocity = _blastOrigin.forward * _blastForce;
             obj.GetComponent<Blast>().FireBlast(velocity);
+            _audio.clip = _blasterClip;
+            _audio.Play(); 
             yield return _rapidfireWait;
         }
     }
@@ -115,8 +136,23 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         Debug.Log("Hit taken, current strength is " + _currentStrength);
         if (Health < 0)
         {
+            foreach (var anim in _explosionAnimators)
+            {
+                anim.SetTrigger("Explode");
+            }
+            _audio.clip = _explosionClip;
+            _audio.Play();
             isDead = true;
-            Destroy(this.gameObject, 0.1f);
+            Destroy(this.gameObject, 0.33f);
         }
+    }
+
+    public void PowerUp()
+    {
+        _anim.SetTrigger("Upgraded");
+        _currentStrength++;
+        if ((int)_currentStrength > 3)
+            _currentStrength = WeaponStrength.Intermediate;
+        Debug.Log("Powered up to " + _currentStrength + " strength!");
     }
 }

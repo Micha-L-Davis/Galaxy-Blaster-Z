@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField]
-    List<WaveModel> _waves;
+    public List<WaveModel> waves;
     WaitWhile _waveEliminatedWait;
-    int _currentWave;
+    public int currentWave;
     bool _stopSpawning;
 
     private void Start()
     {
+        //Enemy.OnEnemyDeath += SpawnPowerup;
         StartCoroutine(SpawnWaveRoutine());
     }
 
@@ -22,21 +22,28 @@ public class SpawnManager : MonoBehaviour
         //yield return UI.WaveDisplayRoutine();
         while (!_stopSpawning)
         {
-            Debug.Log("Spawning " + _waves.Count + " waves.");
-            yield return _waves[_currentWave].LaunchInterval();
-            Debug.Log(_waves[_currentWave].name + " launched.");
+            Debug.Log("Spawning " + waves.Count + " waves.");
+            yield return waves[currentWave].LaunchInterval();
+            Debug.Log(waves[currentWave].name + " launched.");
             yield return new WaitForSeconds(.5f);
-            yield return new WaitWhile(_waves[_currentWave].EnemyisAlive);
+            yield return new WaitWhile(waves[currentWave].EnemyisAlive);
             Debug.Log("Wave Eliminated.");
-            _currentWave++;
-            Debug.Log("Next wave is " + _currentWave);
-            if (_currentWave > _waves.Count - 1)
+            currentWave++;
+            Debug.Log("Next wave is " + currentWave);
+            if (currentWave > waves.Count - 1)
             {
                 //Debug.Log("That's not a valid next wave. We're done here.");
                 _stopSpawning = true;
             }
         }
-
-
     }
+
+    //void SpawnPowerup(GameObject obj)
+    //{
+    //    Enemy enemy = obj.GetComponent<Enemy>();
+    //    if (enemy.dropsPowerup)
+    //    {
+    //        Instantiate(_waves[_currentWave].powerupToDrop);
+    //    }
+    //}
 }

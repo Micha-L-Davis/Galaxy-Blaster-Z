@@ -57,7 +57,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 4073aa32c94d2f84e9dda20cca2a5488, type: 2}
     - target: {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
       propertyPath: m_Name
-      value: Minion (6)
+      value: Minion (6) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113591793817987103, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: _health
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
