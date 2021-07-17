@@ -1,11 +1,11 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable, IConcealable
 {
     public static Action<GameObject> OnEnemyDeath;
+
     [SerializeField]
     protected int _health;
     [SerializeField]
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     [SerializeField]
     protected AudioSource _audio;
     [SerializeField]
-    Collider _collider;
+    protected Collider _collider;
 
 
     protected enum WeaponStrength
@@ -60,6 +60,7 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
         _health--;
         if (Health < 1)
         {
+            Debug.Log(this.gameObject.name + " destroyed!");
             _collider.enabled = false;
             foreach (var anim in _explosionAnimators)
             {
@@ -67,21 +68,18 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
             }
             _audio.clip = _explosionClip;
             _audio.Play();
-            if (OnEnemyDeath != null)
+            OnEnemyDeath?.Invoke(this.gameObject);
+            if (dropsPowerup)
             {
-                OnEnemyDeath(this.gameObject);
+                SpawnPowerup();
             }
-            SpawnPowerup();
             Destroy(this.gameObject, 0.3f);
         }
     }
 
     void SpawnPowerup()
     {
-        if (dropsPowerup)
-        {
-            Instantiate(_spawnManager.waves[_spawnManager.currentWave].powerupToDrop, transform.position, Quaternion.identity);
-        }
+        Instantiate(_spawnManager.waves[_spawnManager.currentWave].powerupToDrop, transform.position, Quaternion.identity);
     }
 
     protected void OnTriggerEnter(Collider other)

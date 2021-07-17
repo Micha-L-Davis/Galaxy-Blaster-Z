@@ -34,6 +34,8 @@ public class SpawnManager : MonoBehaviour
             {
                 //Debug.Log("That's not a valid next wave. We're done here.");
                 _stopSpawning = true;
+
+                //instantiate final boss
             }
         }
     }
@@ -46,4 +48,6 @@ public class SpawnManager : MonoBehaviour
     //        Instantiate(_waves[_currentWave].powerupToDrop);
     //    }
     //}
+
+   
 }

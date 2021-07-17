@@ -304,7 +304,7 @@ MonoBehaviour:
   _anim: {fileID: 600411040252628330}
   _speed: 20
   _blastOrigin: {fileID: 8896011961219546437}
-  _blastForce: 30
+  _blastForce: 50
   _blastCooldown: 0.5
   _rapidfireRate: 0.125
   isDead: 0
@@ -314,6 +314,7 @@ MonoBehaviour:
   - {fileID: 94448964412613351}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 9cae9bcacefe06a4c80409d424641fb9, type: 3}
+  _powerupClip: {fileID: 8300000, guid: 9ef1d2db0514cab438d83e2564dd5e6b, type: 3}
   _audio: {fileID: 3612426942909792357}
   _currentStrength: 0
   _currentWeapon: 0
@@ -458,8 +459,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.971185, y: 1.7548912, z: 8.356316}
-  m_Center: {x: 0.086816706, y: 0.046015263, z: -1.4885126}
+  m_Size: {x: 13.333123, y: 1.7548912, z: 8.356316}
+  m_Center: {x: 0, y: 0.046015263, z: -1.4885126}
 --- !u!82 &3612426942909792357
 AudioSource:
   m_ObjectHideFlags: 0
@@ -823,15 +824,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalPosition.x
@@ -910,15 +911,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1478513579525505800, guid: 3a001f153ee3f0c449cc612e4ccb7985, type: 3}
       propertyPath: m_LocalPosition.x

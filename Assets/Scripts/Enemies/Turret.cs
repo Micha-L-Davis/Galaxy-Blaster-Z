@@ -7,11 +7,21 @@ public class Turret : Enemy
     Quaternion _rotation;
     [SerializeField]
     float _rapidfireRate = 0.125f;
-    void Start()
+
+    private void Start()
     {
         _currentStrength = WeaponStrength.Advanced;
+    }
+
+    void OnEnable()
+    {
         StartCoroutine(TurretFireRoutine());
     }
+
+    //public void CorrectRotation(Vector3 rot)
+    //{
+
+    //}
 
     private void Update()
     {
@@ -27,8 +37,10 @@ public class Turret : Enemy
             yield return new WaitForSeconds(Random.Range(2f, 4f));
             if (!_concealed)
             {
+                Debug.Log("Firing Turrets!");
                 for (int i = 0; i <= (int)_currentStrength; i++)
                 {
+                    Debug.Log(transform.name + " firing!");
                     var blast = PoolManager.Instance.RequestPoolObject(PoolManager.Instance.enemyBlastPool, PoolManager.Instance.enemyBlastPrefab, PoolManager.Instance.enemyBlastContainer);
                     blast.transform.position = _blastOrigins[0].position;
                     var velocity = _blastOrigins[0].forward * _blastForce;

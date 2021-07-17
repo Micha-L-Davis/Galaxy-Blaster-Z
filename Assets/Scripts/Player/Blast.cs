@@ -36,6 +36,7 @@ public class Blast : MonoBehaviour, IDamageable
         IDamageable i = other.GetComponent<IDamageable>();
         if (i != null)
         {
+            Debug.Log(this.gameObject.name + " hit " + other.gameObject.name);
             i.Damage();
         }
     }
