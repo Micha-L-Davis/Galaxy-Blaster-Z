@@ -10,14 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72b00e8768c098946a2d921e6695e142, type: 3}
-  m_Name: Wave_5
+  m_Name: Wave_8
   m_EditorClassIdentifier: 
-  _waveNumber: 0
+  _waveNumber: 8
   _members:
-  - {fileID: 8761847117601894115, guid: 05e67a97ba0805c44bd1657523120710, type: 3}
-  - {fileID: 8761847117601894115, guid: 05e67a97ba0805c44bd1657523120710, type: 3}
-  - {fileID: 8066564845508871525, guid: 7353772be5655a74ea4fb73dad57d828, type: 3}
-  - {fileID: 8761847117601894115, guid: 05e67a97ba0805c44bd1657523120710, type: 3}
-  - {fileID: 8761847117601894115, guid: 05e67a97ba0805c44bd1657523120710, type: 3}
+  - {fileID: 4413350955971103203, guid: 8128b700adacfe54883b4d38d66efdd1, type: 3}
   powerupToDrop: {fileID: 5524877749592252342, guid: bf37cda97ddb64af990698ac79b80519, type: 3}
-  _powerUpEnemyPattern: 4
+  _powerUpEnemyPattern: 0

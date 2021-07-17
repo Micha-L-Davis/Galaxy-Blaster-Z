@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     [SerializeField]
     protected int _health;
     [SerializeField]
-    bool _concealed;
+    protected bool _concealed;
     [SerializeField]
     protected Player _player;
     [SerializeField]
@@ -30,6 +30,16 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected AudioSource _audio;
     [SerializeField]
     Collider _collider;
+
+
+    protected enum WeaponStrength
+    {
+        Basic,
+        Intermediate,
+        Advanced
+    };
+    [SerializeField]
+    protected WeaponStrength _currentStrength = WeaponStrength.Basic;
 
     public int Health => _health;
 
@@ -77,7 +87,7 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected void OnTriggerEnter(Collider other)
     {
         IDamageable i = other.GetComponent<IDamageable>();
-        if (i != null && other.tag != "Enemy")
+        if (i != null)
         {
             i.Damage();
         }

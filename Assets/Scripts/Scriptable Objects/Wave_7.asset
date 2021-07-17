@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Wave_7
   m_EditorClassIdentifier: 
   _waveNumber: 0
-  _members: []
-  powerupToDrop: {fileID: 0}
-  _powerUpEnemyPattern: 0
+  _members:
+  - {fileID: 1322649230746273489, guid: 663ea843b7b8e1d43b77dcc3a89b61ca, type: 3}
+  - {fileID: 1322649230746273489, guid: 663ea843b7b8e1d43b77dcc3a89b61ca, type: 3}
+  - {fileID: 8066564845508871525, guid: 7353772be5655a74ea4fb73dad57d828, type: 3}
+  - {fileID: 634491887268390371, guid: 578e71003368ccc47bec622e44b705d7, type: 3}
+  - {fileID: 634491887268390371, guid: 578e71003368ccc47bec622e44b705d7, type: 3}
+  powerupToDrop: {fileID: 5524877749592252342, guid: bf37cda97ddb64af990698ac79b80519, type: 3}
+  _powerUpEnemyPattern: 4

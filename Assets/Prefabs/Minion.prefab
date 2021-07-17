@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 4803348870989155818}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 42.04, y: 14.53, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.333, y: 0.333, z: 0.333}
   m_Children:
   - {fileID: 3692278412283354882}
   - {fileID: 4320950573483228488}
@@ -92,7 +92,7 @@ MonoBehaviour:
   _blastOrigins:
   - {fileID: 3692278412283354882}
   - {fileID: 4320950573483228488}
-  _blastForce: 1
+  _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 4803348870989155817}
   _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}

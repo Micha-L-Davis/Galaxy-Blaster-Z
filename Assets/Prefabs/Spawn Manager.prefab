@@ -48,4 +48,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1e5d92d6ea42a8419729a2b29ed57d4, type: 2}
   - {fileID: 11400000, guid: dca8ad2f14f06ad43bb41118d4f7b145, type: 2}
   - {fileID: 11400000, guid: 13b3a79f02a628a4386a962087706d99, type: 2}
+  - {fileID: 11400000, guid: 5f4ea491f81494240ba28eb076caac56, type: 2}
+  - {fileID: 11400000, guid: 57dab8012b5c0a5488e764db6507b371, type: 2}
+  - {fileID: 11400000, guid: 369d6c14b195db944b5743a7689f778b, type: 2}
+  - {fileID: 11400000, guid: 2512f55e055b71746878b8c30d080111, type: 2}
   currentWave: 0

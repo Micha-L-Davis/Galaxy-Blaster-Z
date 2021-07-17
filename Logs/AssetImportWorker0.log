@@ -3568,3 +3568,926 @@ System memory in use after: 148.1 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2276.
 Total: 2.172800 ms (FindLiveObjects: 0.215200 ms CreateObjectMapping: 0.062800 ms MarkObjects: 1.834700 ms  DeleteObjects: 0.058300 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 9163.337422 seconds.
+  path: Assets/3D/Vehicles/Space/Space_Fighter_06/FBX/Space_Fighter_06.fbx
+  artifactKey: Guid(c1d14a4151db44469b0918c4a8f6c55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Vehicles/Space/Space_Fighter_06/FBX/Space_Fighter_06.fbx using Guid(c1d14a4151db44469b0918c4a8f6c55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e5937d4ef6358c394748f80d7e13b8') in 0.132729 seconds
+  Import took 0.135822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.403397 seconds.
+  path: Assets/3D/Vehicles/Space/Space_Transport_Ship_05/FBX
+  artifactKey: Guid(593539d79a7834ef195bb4aafe31819b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Vehicles/Space/Space_Transport_Ship_05/FBX using Guid(593539d79a7834ef195bb4aafe31819b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04349033028a3c85c6f9bcb1dfeb573') in 0.008644 seconds
+  Import took 0.011357 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001466 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.820 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1456 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.2 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2283.
+Total: 1.864900 ms (FindLiveObjects: 0.183700 ms CreateObjectMapping: 0.074600 ms MarkObjects: 1.547200 ms  DeleteObjects: 0.058100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1843.305484 seconds.
+  path: Assets/Scripts/Enemies/MiniBoss.cs
+  artifactKey: Guid(2644d499c8a17cd49b97790de8d6d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemies/MiniBoss.cs using Guid(2644d499c8a17cd49b97790de8d6d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f231bc6f2098d6b334e8490cda4d2a') in 0.010846 seconds
+  Import took 0.013663 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001396 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.893 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.2 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2287.
+Total: 2.040500 ms (FindLiveObjects: 0.300200 ms CreateObjectMapping: 0.065400 ms MarkObjects: 1.610400 ms  DeleteObjects: 0.063300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001709 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.2 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2290.
+Total: 2.802800 ms (FindLiveObjects: 0.180000 ms CreateObjectMapping: 0.069400 ms MarkObjects: 2.495700 ms  DeleteObjects: 0.056600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.202169 seconds.
+  path: Assets/Scripts/Enemies/MiniBoss.cs
+  artifactKey: Guid(2644d499c8a17cd49b97790de8d6d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemies/MiniBoss.cs using Guid(2644d499c8a17cd49b97790de8d6d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c9d38255ba70a48c69a1b81f65f327') in 0.004584 seconds
+  Import took 0.006941 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001784 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.876 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.2 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2293.
+Total: 2.628300 ms (FindLiveObjects: 0.224900 ms CreateObjectMapping: 0.079800 ms MarkObjects: 2.256900 ms  DeleteObjects: 0.065200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001341 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.816 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.2 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2296.
+Total: 3.101300 ms (FindLiveObjects: 0.300300 ms CreateObjectMapping: 0.064300 ms MarkObjects: 2.671900 ms  DeleteObjects: 0.063600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 626.413920 seconds.
+  path: Assets/Scripts/Enemies/MiniBoss.cs
+  artifactKey: Guid(2644d499c8a17cd49b97790de8d6d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemies/MiniBoss.cs using Guid(2644d499c8a17cd49b97790de8d6d3d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b923c5d1558c18fca70d96dc5fce00') in 0.008697 seconds
+  Import took 0.011729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.912571 seconds.
+  path: Assets/Animations/Enemy/Mini-Boss.controller
+  artifactKey: Guid(7359b395416d43243b9ca4749c8306f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Enemy/Mini-Boss.controller using Guid(7359b395416d43243b9ca4749c8306f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b52bd2125450ddf17bdf51664f7302') in 0.015773 seconds
+  Import took 0.018325 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001434 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.2 MB.
+System memory in use after: 148.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2299.
+Total: 1.803700 ms (FindLiveObjects: 0.169400 ms CreateObjectMapping: 0.043100 ms MarkObjects: 1.493100 ms  DeleteObjects: 0.096800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.411405 seconds.
+  path: Assets/3D/Vehicles/Space/Space_Transport_Ship_05
+  artifactKey: Guid(0b9d82af1f7084e3ea7ca07ea3b88ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Vehicles/Space/Space_Transport_Ship_05 using Guid(0b9d82af1f7084e3ea7ca07ea3b88ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '576c33d59cff79885765100c4c7fc92a') in 0.015087 seconds
+  Import took 0.017736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.731935 seconds.
+  path: Assets/3D/Vehicles/Space/Space_Transport_Ship_05/mini-boss_pattern_anim.anim
+  artifactKey: Guid(eb1b82082638b494cad0b8c50c97437b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Vehicles/Space/Space_Transport_Ship_05/mini-boss_pattern_anim.anim using Guid(eb1b82082638b494cad0b8c50c97437b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3b40b186d09727c27489da84ba8000') in 0.013307 seconds
+  Import took 0.016228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1946.837804 seconds.
+  path: Assets/3D/Vehicles/Space/Space_Transport_Ship_05/mini-boss_approach_anim.anim
+  artifactKey: Guid(24c64d614f7777f4396fdcab2dab31a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Vehicles/Space/Space_Transport_Ship_05/mini-boss_approach_anim.anim using Guid(24c64d614f7777f4396fdcab2dab31a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6982fe1b755a0d5086685dae23c6e40d') in 0.005290 seconds
+  Import took 0.008724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.649588 seconds.
+  path: Assets/Prefabs/Mini-Boss.prefab
+  artifactKey: Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Mini-Boss.prefab using Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (Mini-Boss) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (Mini-Boss) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: '06cc0638f9044984f205bffde5b396d3') in 0.193180 seconds
+  Import took 0.200716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.032150 seconds.
+  path: Assets/Scripts/Scriptable Objects/Wave_8.asset
+  artifactKey: Guid(2512f55e055b71746878b8c30d080111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Wave_8.asset using Guid(2512f55e055b71746878b8c30d080111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e338e983928a6cd89535a84a8f95da1') in 0.016423 seconds
+  Import took 0.019284 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002167 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.819 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.4 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2303.
+Total: 2.122800 ms (FindLiveObjects: 0.158800 ms CreateObjectMapping: 0.043200 ms MarkObjects: 1.856600 ms  DeleteObjects: 0.063100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 171.783216 seconds.
+  path: Assets/Scripts/Scriptable Objects/Wave_1.asset
+  artifactKey: Guid(502016b5817604c46b27d213c0639ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Wave_1.asset using Guid(502016b5817604c46b27d213c0639ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f603ea218c4a1e700aa272df612ef12') in 0.050402 seconds
+  Import took 0.053669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.491336 seconds.
+  path: Assets/Scripts/Scriptable Objects/Wave_2.asset
+  artifactKey: Guid(a1e5d92d6ea42a8419729a2b29ed57d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Wave_2.asset using Guid(a1e5d92d6ea42a8419729a2b29ed57d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178cc0a36545309e913d7863381e1f07') in 0.015910 seconds
+  Import took 0.019015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.642659 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (1) Variant.prefab
+  artifactKey: Guid(2251fa39feea9e844b8233fb03def05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (1) Variant.prefab using Guid(2251fa39feea9e844b8233fb03def05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07656e097721e32b91888115466407f9') in 0.059856 seconds
+  Import took 0.063449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036680 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (1) Variant.prefab
+  artifactKey: Guid(2251fa39feea9e844b8233fb03def05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (1) Variant.prefab using Guid(2251fa39feea9e844b8233fb03def05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07656e097721e32b91888115466407f9') in 0.024264 seconds
+  Import took 0.027321 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001653 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.742 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.4 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 1.915600 ms (FindLiveObjects: 0.155400 ms CreateObjectMapping: 0.041000 ms MarkObjects: 1.622500 ms  DeleteObjects: 0.095100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001630 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.799 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.4 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2310.
+Total: 1.737100 ms (FindLiveObjects: 0.170900 ms CreateObjectMapping: 0.042700 ms MarkObjects: 1.462700 ms  DeleteObjects: 0.059000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001690 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.773 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.4 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2313.
+Total: 2.112200 ms (FindLiveObjects: 0.178500 ms CreateObjectMapping: 0.050800 ms MarkObjects: 1.823500 ms  DeleteObjects: 0.058400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001732 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.035 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.4 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2316.
+Total: 2.668100 ms (FindLiveObjects: 0.221400 ms CreateObjectMapping: 0.093900 ms MarkObjects: 2.294900 ms  DeleteObjects: 0.056600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1000.781056 seconds.
+  path: Assets/Prefabs/Minion.prefab
+  artifactKey: Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion.prefab using Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08995b077f0872862630c6a246187095') in 0.186684 seconds
+  Import took 0.191902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 417.506141 seconds.
+  path: Assets/Prefabs/Minion.prefab
+  artifactKey: Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion.prefab using Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd599ee2b1f3b870736230d41ae2b378') in 0.039607 seconds
+  Import took 0.043305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003138 seconds.
+  path: Assets/Prefabs/Minion.prefab
+  artifactKey: Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion.prefab using Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd599ee2b1f3b870736230d41ae2b378') in 0.027848 seconds
+  Import took 0.032382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.126557 seconds.
+  path: Assets/Prefabs/Minion.prefab
+  artifactKey: Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion.prefab using Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ed7f4cd44e02cafc91461378afddb5') in 0.045156 seconds
+  Import took 0.048584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010839 seconds.
+  path: Assets/Prefabs/Minion.prefab
+  artifactKey: Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion.prefab using Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ed7f4cd44e02cafc91461378afddb5') in 0.028140 seconds
+  Import took 0.031617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.752191 seconds.
+  path: Assets/Prefabs/Minion.prefab
+  artifactKey: Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion.prefab using Guid(51b0a24aca9128a4baca1695df5d1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b90853e45ccf39dc6e37dbd172d4902') in 0.037441 seconds
+  Import took 0.041629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.858946 seconds.
+  path: Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab
+  artifactKey: Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab using Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77f87e84714f6670d64d07a547e556b') in 0.036438 seconds
+  Import took 0.040507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009180 seconds.
+  path: Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab
+  artifactKey: Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab using Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77f87e84714f6670d64d07a547e556b') in 0.024906 seconds
+  Import took 0.028241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.104658 seconds.
+  path: Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab
+  artifactKey: Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab using Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9376f0f3e538a889da423235598325d') in 0.041251 seconds
+  Import took 0.046347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.221128 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (6) Variant.prefab
+  artifactKey: Guid(578e71003368ccc47bec622e44b705d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (6) Variant.prefab using Guid(578e71003368ccc47bec622e44b705d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0e161c03a422bb2d9f8b0fd133fb8b') in 0.025462 seconds
+  Import took 0.031737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.737721 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (5) Variant.prefab
+  artifactKey: Guid(663ea843b7b8e1d43b77dcc3a89b61ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (5) Variant.prefab using Guid(663ea843b7b8e1d43b77dcc3a89b61ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00020b94a7b5c5487228ee9f0eaafcb1') in 0.024356 seconds
+  Import took 0.028255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.554683 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (4) Variant.prefab
+  artifactKey: Guid(05e67a97ba0805c44bd1657523120710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (4) Variant.prefab using Guid(05e67a97ba0805c44bd1657523120710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c79cbc71a5d792cf4d7a9083321c3e5') in 0.025972 seconds
+  Import took 0.029927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.730660 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (3) Variant.prefab
+  artifactKey: Guid(1cb7226c0f7c05a4cb421b02a46a4103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (3) Variant.prefab using Guid(1cb7226c0f7c05a4cb421b02a46a4103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844403cdccaef56ab2ee8ac289d91b6e') in 0.033421 seconds
+  Import took 0.037402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.454166 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (2) Variant.prefab
+  artifactKey: Guid(bde5543beb04f6946926c76a74ba4235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (2) Variant.prefab using Guid(bde5543beb04f6946926c76a74ba4235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9a91162fea027fe4f2005ed6062ea1') in 0.025897 seconds
+  Import took 0.028994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.476786 seconds.
+  path: Assets/Prefabs/Minion Variations/Minion (1) Variant.prefab
+  artifactKey: Guid(2251fa39feea9e844b8233fb03def05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/Minion (1) Variant.prefab using Guid(2251fa39feea9e844b8233fb03def05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a2ad75733f4e3f5e800b3dcafe0494') in 0.022419 seconds
+  Import took 0.025617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.159770 seconds.
+  path: Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab
+  artifactKey: Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Minion Variations/PowerupMinion Variant.prefab using Guid(7353772be5655a74ea4fb73dad57d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb26f6c6c396129a0742736b3702a3eb') in 0.030799 seconds
+  Import took 0.034663 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001516 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.770 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2320.
+Total: 2.407100 ms (FindLiveObjects: 0.177300 ms CreateObjectMapping: 0.048700 ms MarkObjects: 2.118000 ms  DeleteObjects: 0.061900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 172.135508 seconds.
+  path: Assets/Scripts/Scriptable Objects/Wave_8.asset
+  artifactKey: Guid(2512f55e055b71746878b8c30d080111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Scriptable Objects/Wave_8.asset using Guid(2512f55e055b71746878b8c30d080111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5749cd58101c861b797b39875372b396') in 0.047366 seconds
+  Import took 0.050617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.081743 seconds.
+  path: Assets/Prefabs/Spawn Manager.prefab
+  artifactKey: Guid(773b54d8267dee0488a7e7bf0041eee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Spawn Manager.prefab using Guid(773b54d8267dee0488a7e7bf0041eee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd3189616ef3f2d58a2d7fa9a34c7d0') in 0.037730 seconds
+  Import took 0.041095 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001699 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.782 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2323.
+Total: 1.941900 ms (FindLiveObjects: 0.173700 ms CreateObjectMapping: 0.046000 ms MarkObjects: 1.666000 ms  DeleteObjects: 0.055500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001571 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.743 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2326.
+Total: 2.761400 ms (FindLiveObjects: 0.200000 ms CreateObjectMapping: 0.052900 ms MarkObjects: 2.417000 ms  DeleteObjects: 0.089600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 234.924342 seconds.
+  path: Assets/Prefabs/Mini-Boss.prefab
+  artifactKey: Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Mini-Boss.prefab using Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909ceb6b073faf8c19e14039dbcb0430') in 0.138531 seconds
+  Import took 0.146305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.449010 seconds.
+  path: Assets/Prefabs/Power_Up/Power_Up.prefab
+  artifactKey: Guid(bf37cda97ddb64af990698ac79b80519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Power_Up/Power_Up.prefab using Guid(bf37cda97ddb64af990698ac79b80519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73c79cb934c5fa1b5aebdcfde34a760') in 0.011268 seconds
+  Import took 0.013831 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001370 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2330.
+Total: 1.813600 ms (FindLiveObjects: 0.164600 ms CreateObjectMapping: 0.045800 ms MarkObjects: 1.548800 ms  DeleteObjects: 0.053700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001350 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.738 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2333.
+Total: 2.044800 ms (FindLiveObjects: 0.192700 ms CreateObjectMapping: 0.055000 ms MarkObjects: 1.733400 ms  DeleteObjects: 0.062000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002145 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2336.
+Total: 1.942800 ms (FindLiveObjects: 0.156200 ms CreateObjectMapping: 0.042800 ms MarkObjects: 1.685300 ms  DeleteObjects: 0.057200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001486 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2339.
+Total: 1.952800 ms (FindLiveObjects: 0.213500 ms CreateObjectMapping: 0.058800 ms MarkObjects: 1.618700 ms  DeleteObjects: 0.060500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3386.907804 seconds.
+  path: Assets/Prefabs/Mini-Boss.prefab
+  artifactKey: Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Mini-Boss.prefab using Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0bcdd6259191a2b664f49c85362d23a') in 0.152801 seconds
+  Import took 0.161246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.245101 seconds.
+  path: Assets/Prefabs/Mini-Boss.prefab
+  artifactKey: Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Mini-Boss.prefab using Guid(8128b700adacfe54883b4d38d66efdd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3e39b751aba70bc0485188b83bc182') in 0.066689 seconds
+  Import took 0.074206 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001735 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.808 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.9 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2343.
+Total: 1.807100 ms (FindLiveObjects: 0.158900 ms CreateObjectMapping: 0.042000 ms MarkObjects: 1.553300 ms  DeleteObjects: 0.052200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001415 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.9 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2346.
+Total: 2.435600 ms (FindLiveObjects: 0.185500 ms CreateObjectMapping: 0.052900 ms MarkObjects: 2.128000 ms  DeleteObjects: 0.067900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001655 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.756 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1457 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.9 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2349.
+Total: 1.931400 ms (FindLiveObjects: 0.169200 ms CreateObjectMapping: 0.045800 ms MarkObjects: 1.659100 ms  DeleteObjects: 0.056200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001655 seconds.
+Callback registration failed. Increase kMaxCallback.
+
+Fatal Error! Callback registration failed. Increase kMaxCallback.
+
+Crash!!!
+SymInit: Symbol-SearchPath: 'Z:/Program Files/Unity Editors/2020.3.6f1/Editor/Data/Mono;.;Z:\Unity Projects\Galaxy-Blaster-Z;Z:\Program Files\Unity Editors\2020.3.6f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'Michael'
+OS-Version: 10.0.0
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\Unity.exe:Unity.exe (00007FF7F6A50000), size: 134828032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.6.35766
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFA5EA70000), size: 2052096 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFA5CE90000), size: 774144 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFA5C490000), size: 2920448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFA5C760000), size: 1437696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFA5C270000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFA5CAE0000), size: 1703936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFA5C1B0000), size: 139264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFA5D970000), size: 172032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFA5C970000), size: 1093632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFA5C3C0000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.789
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FF9F5AD0000), size: 8974336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.0.0.0
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFA5E440000), size: 704512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1052
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFA5E4F0000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.546
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFA5E020000), size: 634880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFA5CCE0000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFA5D230000), size: 7598080 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFA5CF70000), size: 348160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFA5DEF0000), size: 1220608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFA5E6D0000), size: 3493888 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFA5E260000), size: 196608 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFA5D9B0000), size: 4624384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\System32\cfgmgr32.dll:cfgmgr32.dll (00007FFA5C370000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\bcrypt.dll:bcrypt.dll (00007FFA5C460000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFA5D0F0000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFA5D160000), size: 839680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.985
+C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFA5CA80000), size: 393216 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FF9F8840000), size: 1306624 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\WLDAP32.dll:WLDAP32.dll (00007FFA5E200000), size: 352256 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\Normaliz.dll:Normaliz.dll (00007FFA5DE30000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6414336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\optix.6.0.0.dll:optix.6.0.0.dll (00007FFA37090000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.0.0.0
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FF9F7E30000), size: 1609728 (result: 0), SymType: '-deferred-', PDB: ''
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFA574E0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFA14750000), size: 1200128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFA314D0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFA5B620000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFA52720000), size: 1089536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFA56A90000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFA5AA80000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FF9F6B50000), size: 2535424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.1.0
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FF9F44D0000), size: 8978432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.0
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FF9F1640000), size: 43806720 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFA39AA0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1
+C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFA37F00000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFA37AA0000), size: 598016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFA5BB80000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FF9F87C0000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.20342
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFA56A70000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\tbb.dll:tbb.dll (00007FFA11230000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
+C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFA37EF0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.28.29334.0
+C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFA52A70000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFA390E0000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
+C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFA39030000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
+C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFA5C0A0000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\OpenRL.dll:OpenRL.dll (000001C2A6CD0000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\embree.dll:embree.dll (00007FF9EC4E0000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (00000000715D0000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFA5B980000), size: 434176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (00000000714F0000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (000001C2A7920000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFA5BDA0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFA5AAC0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFA5C1E0000), size: 536576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFA59840000), size: 647168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFA5DE40000), size: 712704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFA5A2E0000), size: 7933952 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\Wldp.dll:Wldp.dll (00007FFA5BC20000), size: 180224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.662
+C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFA5C0F0000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFA5E590000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFA58AE0000), size: 253952 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFA52380000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFA5D9A0000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.610
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFA56630000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFA56610000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFA5B670000), size: 835584 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFA4ABF0000), size: 520192 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFA4DFE0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFA57C40000), size: 2506752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFA5AAE0000), size: 999424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.964
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_cc5a8fceed9bb371\nvldumdx.dll:nvldumdx.dll (00007FFA4A330000), size: 1069056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 27.21.14.6589
+C:\WINDOWS\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFA53C20000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFA5CF50000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFA5BB60000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFA5B2B0000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1052
+C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_cc5a8fceed9bb371\nvwgf2umx.dll:nvwgf2umx.dll (00007FF9FED20000), size: 74567680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 27.21.14.6589
+C:\WINDOWS\system32\nvspcap64.dll:nvspcap64.dll (00007FFA11AF0000), size: 2854912 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.21.0.36
+C:\WINDOWS\SYSTEM32\ntmarta.dll:ntmarta.dll (00007FFA5AEE0000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFA57150000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFA4F1E0000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFA4F0B0000), size: 598016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFA43C80000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFA43920000), size: 1093632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFA404D0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\cudart64_90.dll:cudart64_90.dll (00007FF9F0680000), size: 397312 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.14.11.9000
+C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FF9EFEF0000), size: 1462272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.1.0
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\radeonrays.dll:radeonrays.dll (00007FF9EFB30000), size: 552960 (result: 0), SymType: '-deferred-', PDB: ''
+Z:\Program Files\Unity Editors\2020.3.6f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FF9D9000000), size: 7790592 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFA5DE20000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\ProgramData\Microsoft\VisualStudio\Setup\x64\Microsoft.VisualStudio.Setup.Configuration.Native.dll:Microsoft.VisualStudio.Setup.Configuration.Native.dll (00007FF9F0630000), size: 327680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.1.1046.44959
+C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFA5A170000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.19041.1023
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\comctl32.dll:comctl32.dll (00007FFA3F180000), size: 2727936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.10.19041.1110
+C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFA52460000), size: 1785856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\Windows\System32\thumbcache.dll:thumbcache.dll (00007FFA20CC0000), size: 417792 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\SYSTEM32\policymanager.dll:policymanager.dll (00007FFA57310000), size: 655360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\WINDOWS\SYSTEM32\msvcp110_win.dll:msvcp110_win.dll (00007FFA5B340000), size: 565248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\Windows\System32\MrmCoreR.dll:MrmCoreR.dll (00007FFA4E9E0000), size: 1003520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1023
+C:\Windows\System32\iertutil.dll:iertutil.dll (00007FFA51DB0000), size: 2818048 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.19041.1081
+C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll:windows.staterepositorycore.dll (00007FFA3D2A0000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\Windows\System32\bcp47mrm.dll:bcp47mrm.dll (00007FFA4E040000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.867
+C:\Windows\System32\Windows.UI.dll:Windows.UI.dll (00007FFA4E6B0000), size: 1314816 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\Windows\System32\WindowManagementAPI.dll:WindowManagementAPI.dll (00007FFA52940000), size: 659456 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\System32\TextInputFramework.dll:TextInputFramework.dll (00007FFA4E5B0000), size: 1019904 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\Windows\System32\InputHost.dll:InputHost.dll (00007FFA4E450000), size: 1384448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.906
+C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFA57AE0000), size: 1392640 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\Windows\System32\CoreMessaging.dll:CoreMessaging.dll (00007FFA59350000), size: 991232 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.746
+C:\WINDOWS\SYSTEM32\twinapi.appcore.dll:twinapi.appcore.dll (00007FFA54D90000), size: 2101248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.964
+C:\Windows\System32\CoreUIComponents.dll:CoreUIComponents.dll (00007FFA58C70000), size: 3530752 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1110_none_91a01826cc8bca4c\gdiplus.dll:gdiplus.dll (00007FFA3F420000), size: 1740800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1110
+C:\WINDOWS\System32\MSCTF.dll:MSCTF.dll (00007FFA5CFD0000), size: 1134592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.1081
+C:\WINDOWS\SYSTEM32\edputil.dll:edputil.dll (00007FFA2B3C0000), size: 147456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.546
+C:\Windows\System32\Windows.StateRepositoryPS.dll:Windows.StateRepositoryPS.dll (00007FFA3B1C0000), size: 1335296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.844
+C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFA54B80000), size: 1982464 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.19041.867
+
+========== OUTPUTTING STACK TRACE ==================
+
+0x00007FFA5C4C4ED9 (KERNELBASE) RaiseException
+0x00007FF7F917B19D (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF7F917C0EA (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF7FAD3E1FE (Unity) DebugStringToFilePostprocessedStacktrace
+0x00007FF7FAD3D7AF (Unity) DebugStringToFile
+0x00007FF7F6CB3DC3 (Unity) CallbackArraySubBase<void (__cdecl*)(MemoryManager::AllocationLogDetails const & __ptr64)>::Register
+0x00007FF7F994CD49 (Unity) LoadDomainAndUserAssemblies
+0x00007FF7F994D1FE (Unity) LoadUserAssemblies
+0x00007FF7F9D82308 (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007FF7F9E4D662 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007FF7F9E4F7C0 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007FF7F9E52F4E (Unity) asio::io_service::run
+0x00007FF7F9DC8FD0 (Unity) RunAssetImportWorkerClientV2
+0x00007FF7F9DC9020 (Unity) RunAssetImporterV2
+0x00007FF7F92D4266 (Unity) Application::InitializeProject
+0x00007FF7F9C54BB2 (Unity) WinMain
+0x00007FF7FBAD2A36 (Unity) __scrt_common_main_seh
+0x00007FFA5CEA7034 (KERNEL32) BaseThreadInitThunk
+0x00007FFA5EAC2651 (ntdll) RtlUserThreadStart
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/Michael/AppData/Local/Temp/Unity/Editor/Crashes

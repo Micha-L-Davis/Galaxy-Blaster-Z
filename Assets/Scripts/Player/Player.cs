@@ -27,7 +27,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     [SerializeField]
     List<Animator> _explosionAnimators;
     [SerializeField]
-    AudioClip _explosionClip, _blasterClip;
+    AudioClip _explosionClip, _blasterClip, _powerupClip;
     [SerializeField]
     AudioSource _audio;
 
@@ -150,6 +150,8 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     public void PowerUp()
     {
         _anim.SetTrigger("Upgraded");
+        _audio.clip = _powerupClip;
+        _audio.Play();
         _currentStrength++;
         if ((int)_currentStrength > 3)
             _currentStrength = WeaponStrength.Intermediate;
