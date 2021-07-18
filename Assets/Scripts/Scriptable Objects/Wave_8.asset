@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b00e8768c098946a2d921e6695e142, type: 3}
   m_Name: Wave_8
   m_EditorClassIdentifier: 
-  _waveNumber: 8
   _members:
   - {fileID: 4413350955971103203, guid: 8128b700adacfe54883b4d38d66efdd1, type: 3}
-  powerupToDrop: {fileID: 5524877749592252342, guid: bf37cda97ddb64af990698ac79b80519, type: 3}
-  _powerUpEnemyPattern: 0
+  waveFlightPattern: 0
+  powerupToDrop: {fileID: 0}

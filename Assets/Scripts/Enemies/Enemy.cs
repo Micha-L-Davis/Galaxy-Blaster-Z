@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected AudioSource _audio;
     [SerializeField]
     protected Collider _collider;
+    
 
 
     protected enum WeaponStrength
@@ -69,18 +70,18 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
             _audio.clip = _explosionClip;
             _audio.Play();
             OnEnemyDeath?.Invoke(this.gameObject);
-            if (dropsPowerup)
-            {
-                SpawnPowerup();
-            }
+            //if (dropsPowerup)
+            //{
+            //    SpawnPowerup();
+            //}
             Destroy(this.gameObject, 0.3f);
         }
     }
 
-    void SpawnPowerup()
-    {
-        Instantiate(_spawnManager.waves[_spawnManager.currentWave].powerupToDrop, transform.position, Quaternion.identity);
-    }
+    //void SpawnPowerup()
+    //{
+    //    Instantiate(_spawnManager.waves[_spawnManager.currentWave].powerupToDrop, transform.position, Quaternion.identity);
+    //}
 
     protected void OnTriggerEnter(Collider other)
     {

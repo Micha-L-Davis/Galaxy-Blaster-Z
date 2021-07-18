@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b00e8768c098946a2d921e6695e142, type: 3}
   m_Name: Wave_6
   m_EditorClassIdentifier: 
-  _waveNumber: 0
   _members:
-  - {fileID: 1322649230746273489, guid: 663ea843b7b8e1d43b77dcc3a89b61ca, type: 3}
-  - {fileID: 8761847117601894115, guid: 05e67a97ba0805c44bd1657523120710, type: 3}
-  - {fileID: 4590835679586255239, guid: 1cb7226c0f7c05a4cb421b02a46a4103, type: 3}
-  - {fileID: 4570760343383488020, guid: bde5543beb04f6946926c76a74ba4235, type: 3}
-  - {fileID: 4487403084527180225, guid: 2251fa39feea9e844b8233fb03def05f, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+  waveFlightPattern: 3
   powerupToDrop: {fileID: 0}
-  _powerUpEnemyPattern: 0

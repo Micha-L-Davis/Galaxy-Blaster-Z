@@ -9,10 +9,13 @@ public class SpawnManager : MonoBehaviour
     WaitWhile _waveEliminatedWait;
     public int currentWave;
     bool _stopSpawning;
+    [SerializeField]
+    GameObject _playerPrefab;
 
     private void Start()
     {
-        //Enemy.OnEnemyDeath += SpawnPowerup;
+        Enemy.OnEnemyDeath += SpawnPowerup;
+        Player.OnPlayerDeath += Respawn;
         StartCoroutine(SpawnWaveRoutine());
     }
 
@@ -40,14 +43,38 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    //void SpawnPowerup(GameObject obj)
-    //{
-    //    Enemy enemy = obj.GetComponent<Enemy>();
-    //    if (enemy.dropsPowerup)
-    //    {
-    //        Instantiate(_waves[_currentWave].powerupToDrop);
-    //    }
-    //}
+    void SpawnPowerup(GameObject obj)
+    {
+        Enemy enemy = obj.GetComponent<Enemy>();
+        if (enemy.dropsPowerup)
+        {
+            Instantiate(waves[currentWave].powerupToDrop, enemy.transform.position, Quaternion.identity);
+        }
+    }
 
-   
+    void Respawn()
+    {
+        _stopSpawning = true;
+        StopAllCoroutines();
+        StopCoroutine(waves[currentWave].LaunchInterval());
+        foreach (var item in waves[currentWave].spawned)
+        {
+            Destroy(item.gameObject, 0.25f);
+        }
+        waves[currentWave].spawned.Clear();
+        if (currentWave > 8)
+            currentWave = 9;
+        else
+            currentWave = 0;
+
+        StartCoroutine(RespawnPlayerRoutine());
+    }
+
+    private IEnumerator RespawnPlayerRoutine()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Instantiate(_playerPrefab);
+        _stopSpawning = false;
+        StartCoroutine(SpawnWaveRoutine());
+    }
 }

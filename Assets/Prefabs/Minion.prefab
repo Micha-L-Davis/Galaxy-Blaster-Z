@@ -106,6 +106,7 @@ MonoBehaviour:
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 7381272150052320564}
   _collider: {fileID: 8380773110962259483}
+  _currentStrength: 0
 --- !u!33 &4803348870990320106
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -165,7 +166,7 @@ Animator:
   m_GameObject: {fileID: 4803348870989155818}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 759b04e086a640d448c88ed0b0237b5a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3e1a83dd553fc9e459442e3c889721b3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

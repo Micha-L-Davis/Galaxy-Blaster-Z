@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72b00e8768c098946a2d921e6695e142, type: 3}
-  m_Name: Wave_5
+  m_Name: Wave_10
   m_EditorClassIdentifier: 
   _members:
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
-  - {fileID: 8066564845508871525, guid: 7353772be5655a74ea4fb73dad57d828, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
   - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
-  - {fileID: 4803348870989155818, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
-  waveFlightPattern: 2
+  waveFlightPattern: 5
   powerupToDrop: {fileID: 5524877749592252342, guid: bf37cda97ddb64af990698ac79b80519, type: 3}

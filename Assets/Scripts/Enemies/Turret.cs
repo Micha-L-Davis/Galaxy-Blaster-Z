@@ -18,11 +18,6 @@ public class Turret : Enemy
         StartCoroutine(TurretFireRoutine());
     }
 
-    //public void CorrectRotation(Vector3 rot)
-    //{
-
-    //}
-
     private void Update()
     {
         Vector3 relativePos = _player.transform.position - transform.position;

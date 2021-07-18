@@ -141,6 +141,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
                 anim.SetTrigger("Explode");
             }
             _audio.clip = _explosionClip;
+            OnPlayerDeath?.Invoke();
             _audio.Play();
             isDead = true;
             Destroy(this.gameObject, 0.33f);
