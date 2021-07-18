@@ -11,6 +11,8 @@ public class SpawnManager : MonoBehaviour
     bool _stopSpawning;
     [SerializeField]
     GameObject _playerPrefab;
+    [SerializeField]
+    GameObject _bigBadBossPrefab;
 
     private void Start()
     {
@@ -37,7 +39,7 @@ public class SpawnManager : MonoBehaviour
             {
                 //Debug.Log("That's not a valid next wave. We're done here.");
                 _stopSpawning = true;
-
+                Instantiate(_bigBadBossPrefab);
                 //instantiate final boss
             }
         }

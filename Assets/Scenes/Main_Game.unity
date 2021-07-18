@@ -20567,6 +20567,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
+      propertyPath: currentWave
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
       propertyPath: _playerPrefab
       value: 
       objectReference: {fileID: 600411040252628329, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
@@ -20574,6 +20578,10 @@ PrefabInstance:
       propertyPath: waves.Array.size
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
+      propertyPath: _bigBadBossPrefab
+      value: 
+      objectReference: {fileID: 5541525506226970344, guid: 15b04bd5ce7642b4f927d15e1698fffc, type: 3}
     - target: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
       propertyPath: waves.Array.data[0]
       value: 
