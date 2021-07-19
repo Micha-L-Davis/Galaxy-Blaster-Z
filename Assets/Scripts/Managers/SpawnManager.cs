@@ -5,12 +5,25 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    private static SpawnManager _instance;
+
+    public static SpawnManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+                Debug.LogError("SpawnManager is NULL");
+            return _instance;
+        }
+    }
+
     public List<WaveModel> waves;
-    WaitWhile _waveEliminatedWait;
     public int currentWave;
     bool _stopSpawning;
     [SerializeField]
     GameObject _playerPrefab;
+    [SerializeField]
+    Player _player;
     [SerializeField]
     GameObject _bigBadBossPrefab;
 
@@ -48,10 +61,18 @@ public class SpawnManager : MonoBehaviour
     void SpawnPowerup(GameObject obj)
     {
         Enemy enemy = obj.GetComponent<Enemy>();
-        if (enemy.dropsPowerup)
+        if (enemy.dropsPowerup && _player.Health < 3)
         {
             Instantiate(waves[currentWave].powerupToDrop, enemy.transform.position, Quaternion.identity);
         }
+        else
+        {
+            int r = UnityEngine.Random.Range(1, 4);
+            //roll a random number between 1-3
+
+            //instantiate weapon upgrade 1, 2 or 3.
+        }
+        
     }
 
     void Respawn()
@@ -68,15 +89,18 @@ public class SpawnManager : MonoBehaviour
             currentWave = 9;
         else
             currentWave = 0;
-
-        StartCoroutine(RespawnPlayerRoutine());
     }
 
-    private IEnumerator RespawnPlayerRoutine()
+    public IEnumerator RespawnPlayerRoutine()
     {
         yield return new WaitForSeconds(2.5f);
         Instantiate(_playerPrefab);
         _stopSpawning = false;
         StartCoroutine(SpawnWaveRoutine());
+    }
+
+    private void Awake()
+    {
+        _instance = this;
     }
 }

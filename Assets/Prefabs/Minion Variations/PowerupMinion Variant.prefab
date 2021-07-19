@@ -76,6 +76,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5113591793817987103, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
+      propertyPath: scoreValue
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113591793817987103, guid: 51b0a24aca9128a4baca1695df5d1796, type: 3}
       propertyPath: dropsPowerup
       value: 1
       objectReference: {fileID: 0}

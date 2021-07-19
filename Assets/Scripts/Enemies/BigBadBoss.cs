@@ -11,6 +11,8 @@ public class BigBadBoss : MonoBehaviour
     List<List<GameObject>> _turretLists = new List<List<GameObject>>();
     [SerializeField]
     Animator _anim;
+    [SerializeField]
+    GameObject _smokeCloudPrefab;
 
     void Start()
     {
@@ -23,6 +25,7 @@ public class BigBadBoss : MonoBehaviour
 
     void RemoveTurret(GameObject turret)
     {
+        Instantiate(_smokeCloudPrefab, turret.transform.position, Quaternion.identity, this.transform);
         _turretLists[_phase].Remove(turret);
         if (_turretLists[_phase].Count == 0)
         {
@@ -32,9 +35,9 @@ public class BigBadBoss : MonoBehaviour
 
         if (_phase > 2)
         {
-
+            StopAllCoroutines();
             //disable whatever might still be running.
-            //game over man. You win.
+            UIManager.Instance.Victory();
         }
 
     }

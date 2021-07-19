@@ -106,6 +106,7 @@ MonoBehaviour:
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 7381272150052320564}
   _collider: {fileID: 8380773110962259483}
+  scoreValue: 125
   _currentStrength: 0
 --- !u!33 &4803348870990320106
 MeshFilter:

@@ -519,19 +519,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017043829819416}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 5541525506226970395}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174542841815}
   _explosionClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
   _blasterClip: {fileID: 8300000, guid: 53aba29137ec8044e89210aa40c27879, type: 3}
   _audio: {fileID: 5541525506226970337}
   _collider: {fileID: 5541525506226970387}
+  scoreValue: 425
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!95 &5541525506226970343
@@ -763,19 +764,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042845093160}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 5541525506226970395}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174135430359}
   _explosionClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
   _blasterClip: {fileID: 8300000, guid: 53aba29137ec8044e89210aa40c27879, type: 3}
   _audio: {fileID: 5541525506226970392}
   _collider: {fileID: 5541525506226970397}
+  scoreValue: 425
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!95 &5541525506226970399
@@ -1007,19 +1009,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017044059172220}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 5541525506226970395}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174301670152}
   _explosionClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
   _blasterClip: {fileID: 8300000, guid: 53aba29137ec8044e89210aa40c27879, type: 3}
   _audio: {fileID: 5541525506226970341}
   _collider: {fileID: 5541525506226970393}
+  scoreValue: 425
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!95 &5541525506226970395
@@ -1233,6 +1236,7 @@ MonoBehaviour:
   - {fileID: 6631017043900285089}
   - {fileID: 6631017043185996188}
   _anim: {fileID: 5541525506226970351}
+  _smokeCloudPrefab: {fileID: 4688366796816071956, guid: aadb669e025035242a17da7ab0de9ebc, type: 3}
 --- !u!1 &6004078272740272616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,19 +1418,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042641973731}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 3924947739438710329}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174089752208}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 3924947739438710330}
   _collider: {fileID: 6042544628465710708}
+  scoreValue: 725
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6042544628465710708
@@ -2479,19 +2484,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042410341441}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 6631017042570614970}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479173904431632}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017042570614971}
   _collider: {fileID: 6631017043080958369}
+  scoreValue: 725
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6631017043080958369
@@ -2804,19 +2810,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017044183604508}
   _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 6631017043538380271}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174000857867}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017043538380264}
   _collider: {fileID: 6631017043185996176}
+  scoreValue: 1000
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!65 &6631017043185996176
@@ -3241,19 +3248,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 15
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042894279297}
   _blastForce: 40
   dropsPowerup: 0
   anim: {fileID: 6631017043184700180}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174675091679}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017043184700181}
   _collider: {fileID: 6631017043526685654}
+  scoreValue: 1000
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6631017043526685654
@@ -3566,19 +3574,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017043321813072}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 6631017042924924043}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479175360174233}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017042924924052}
   _collider: {fileID: 6631017043793235398}
+  scoreValue: 725
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6631017043793235398
@@ -3753,19 +3762,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042485338603}
   _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 6631017042778492179}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479173681482824}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017042778492188}
   _collider: {fileID: 6631017043900285093}
+  scoreValue: 1000
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!65 &6631017043900285093
@@ -4104,19 +4114,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 0}
+  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017043887231699}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 6631017043230006836}
-  _spawnManager: {fileID: 0}
+  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479175210907899}
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017043230006837}
   _collider: {fileID: 6856892722694876474}
+  scoreValue: 725
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6856892722694876474

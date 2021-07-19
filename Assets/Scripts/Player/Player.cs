@@ -30,6 +30,8 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     AudioClip _explosionClip, _blasterClip, _powerupClip;
     [SerializeField]
     AudioSource _audio;
+    [SerializeField]
+    int _score;
 
     public float Speed => _speed;
 
@@ -37,7 +39,10 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     {
         Basic,
         Intermediate,
-        Advanced
+        Advanced,
+        SuperBasic,
+        SuperIntermediate,
+        SuperAdvanced
     };
     [SerializeField]
     WeaponStrength _currentStrength = WeaponStrength.Basic;
@@ -45,7 +50,9 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     enum Weapon
     {
         Blaster,
-        SplitFire
+        MegaBlast,
+        BlastWave,
+        BlackHole
     };
     [SerializeField]
     Weapon _currentWeapon = Weapon.Blaster;
@@ -57,6 +64,8 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     void Start()
     {
         _rapidfireWait = new WaitForSeconds(_rapidfireRate);
+        Enemy.OnEnemyDeath += AddScore;
+        UIManager.Instance.StrengthUpdate((int)_currentStrength);
     }
 
     // Update is called once per frame
@@ -78,7 +87,6 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
                 case Weapon.Blaster:
                     if (Time.time > _canBlast)
                     {
-
                         StartCoroutine(BlasterFireRoutine());
                     }
 
@@ -132,7 +140,12 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
 
     public void Damage()
     {
+        if (Health == 4)
+        {
+            _currentWeapon = Weapon.Blaster;
+        }       
         _currentStrength--;
+        UIManager.Instance.StrengthUpdate((int)_currentStrength);
         Debug.Log("Hit taken, current strength is " + _currentStrength);
         if (Health < 0)
         {
@@ -148,14 +161,47 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         }
     }
 
-    public void PowerUp()
+    public void PowerUp(int weaponType)
     {
         _anim.SetTrigger("Upgraded");
         _audio.clip = _powerupClip;
         _audio.Play();
         _currentStrength++;
         if ((int)_currentStrength > 3)
-            _currentStrength = WeaponStrength.Intermediate;
-        Debug.Log("Powered up to " + _currentStrength + " strength!");
+        {
+            switch (weaponType)
+            {
+                case 0:
+                    _currentStrength = WeaponStrength.Advanced;
+                    break;
+                case 1:
+                    _currentWeapon = Weapon.MegaBlast;
+                    //update UI with image
+                    break;
+                case 2:
+                    _currentWeapon = Weapon.BlastWave;
+                    //update UI with image
+                    break;
+                case 3:
+                    _currentWeapon = Weapon.BlackHole;
+                    //update UI with image
+                    break;
+                default:
+                    break;
+            }
+        }
+        UIManager.Instance.StrengthUpdate(Health);
+        Debug.Log("Powered up to " + Health + " strength!");
+    }
+
+    void AddScore(GameObject enemy)
+    {
+        _score += enemy.GetComponent<Enemy>().scoreValue;
+        UIManager.Instance.ScoreUpdate(_score);
+    }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        UIManager.Instance.Pause();
     }
 }

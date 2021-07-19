@@ -30,6 +30,8 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected AudioSource _audio;
     [SerializeField]
     protected Collider _collider;
+    [SerializeField]
+    public int scoreValue;
     
 
 
