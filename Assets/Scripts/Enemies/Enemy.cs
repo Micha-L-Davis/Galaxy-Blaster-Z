@@ -54,13 +54,13 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
             _concealed = false;
     }
 
-    public void Damage()
+    public void Damage(int damage)
     {
         if (_concealed)
         {
             return;
         }
-        _health--;
+        _health -= damage;
         if (Health < 1)
         {
             Debug.Log(this.gameObject.name + " destroyed!");
@@ -90,7 +90,7 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
         IDamageable i = other.GetComponent<IDamageable>();
         if (i != null)
         {
-            i.Damage();
+            i.Damage(1);
         }
     }
 }

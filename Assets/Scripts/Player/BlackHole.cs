@@ -40,11 +40,11 @@ public class BlackHole : MonoBehaviour, IDamageable
         if (i != null)
         {
             Debug.Log(this.gameObject.name + " hit " + other.gameObject.name);
-            i.Damage();
+            i.Damage(5);
         }
     }
 
-    public void Damage()
+    public void Damage(int damage)
     {
         Destroy(this.gameObject);
     }

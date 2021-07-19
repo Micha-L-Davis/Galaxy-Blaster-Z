@@ -9,11 +9,54 @@ public class Blast : MonoBehaviour, IDamageable
     [SerializeField]
     Rigidbody _rigidbody;
     [SerializeField]
-    float _rotationSpeed = 30;
+    int _damage;
+    [SerializeField]
+    bool _isEnemyBlast;
+    [SerializeField]
+    GameObject _hitEffect;
 
     public int Health => _health;
 
-    public void Damage()
+    private void Start()
+    {
+        switch (PlayerPrefs.GetInt("Difficulty"))
+        {
+            case 1:
+                if (_isEnemyBlast)
+                {
+                    _damage = 1;
+                }
+                else
+                {
+                    _damage = 3;
+                }
+                break;
+            case 2:
+                if (_isEnemyBlast)
+                {
+                    _damage = 2;
+                }
+                else
+                {
+                    _damage = 2;
+                }
+                break;
+            case 3:
+                if (_isEnemyBlast)
+                {
+                    _damage = 3;
+                }
+                else
+                {
+                    _damage = 1;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void Damage(int damage)
     {
         gameObject.SetActive(false);
     }
@@ -27,11 +70,6 @@ public class Blast : MonoBehaviour, IDamageable
     private void Update()
     {
         _rigidbody.velocity = _velocity;
-        //Vector3 desiredRotation = Quaternion.LookRotation(_rigidbody.velocity, transform.up).eulerAngles;
-        //Vector3 rotation = desiredRotation - _rigidbody.rotation.eulerAngles;
-        //rotation.Normalize();
-        //rotation *= _rotationSpeed;
-        //_rigidbody.AddTorque(rotation);
         if (transform.position.x > 32 || transform.position.x < -36 || transform.position.y > 20 || transform.position.y < -20)
             gameObject.SetActive(false);
     }
@@ -43,7 +81,8 @@ public class Blast : MonoBehaviour, IDamageable
         if (i != null)
         {
             Debug.Log(this.gameObject.name + " hit " + other.gameObject.name);
-            i.Damage();
+            i.Damage(_damage);
+            Instantiate(_hitEffect, new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z -4), Quaternion.identity, other.transform);
         }
     }
 }

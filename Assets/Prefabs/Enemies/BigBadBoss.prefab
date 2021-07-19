@@ -4118,7 +4118,7 @@ MonoBehaviour:
   _blastOrigins:
   - {fileID: 6631017043887231699}
   _blastForce: 30
-  dropsPowerup: 0
+  dropsPowerup: 1
   anim: {fileID: 6631017043230006836}
   _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:

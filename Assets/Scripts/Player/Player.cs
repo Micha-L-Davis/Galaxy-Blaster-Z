@@ -43,6 +43,9 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     Collider _collider;
     [SerializeField]
     CameraShake _camera;
+    [SerializeField]
+    float _hitCooldown = 0.5f;
+    float _canBeHit = -1;
 
 
     public float Speed => _speed;
@@ -63,8 +66,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     {
         Blaster,
         MegaBlast,
-        BlastWave,
-        //BlackHole
+        BlastWave
     };
     [SerializeField]
     Weapon _currentWeapon = Weapon.Blaster;
@@ -251,38 +253,44 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     //    return _target;
     //}
 
-    public void Damage()
+    public void Damage(int damage)
     {
-        _camera.ShakeCamera(.05f);
-        if (Health == 4)
+        if (Time.time > _canBeHit)
         {
-            _currentWeapon = Weapon.Blaster;
-        }       
-        _currentStrength--;
-        StartCoroutine(DisableColliderRoutine());
-        UIManager.Instance.StrengthUpdate((int)_currentStrength);
-        Debug.Log("Hit taken, current strength is " + _currentStrength);
-        if (Health < 0)
-        {
-            foreach (var anim in _explosionAnimators)
+            _canBeHit = _hitCooldown + Time.time;
+            _camera.ShakeCamera(.05f);
+            _currentStrength -= damage;
+            if (Health >= 2)
             {
-                anim.SetTrigger("Explode");
+                _currentWeapon = Weapon.Blaster;
+                UIManager.Instance.WeaponUpdate((int)_currentWeapon);
             }
-            _audio.clip = _explosionClip;
-            OnPlayerDeath?.Invoke();
-            _audio.Play();
-            isDead = true;
-            Destroy(this.gameObject, 0.4f);
+            //StartCoroutine(DisableColliderRoutine());
+            UIManager.Instance.StrengthUpdate((int)_currentStrength);
+            Debug.Log("Hit taken, current strength is " + _currentStrength);
+            if (Health < 0)
+            {
+                foreach (var anim in _explosionAnimators)
+                {
+                    anim.SetTrigger("Explode");
+                }
+                _audio.clip = _explosionClip;
+                OnPlayerDeath?.Invoke();
+                _audio.Play();
+                isDead = true;
+                Destroy(this.gameObject, 0.4f);
+            }
         }
+
     }
 
-    IEnumerator DisableColliderRoutine()
-    {
-        _collider.enabled = false;
-        yield return new WaitForSeconds(.5f);
-        _collider.enabled = true;
+    //IEnumerator DisableColliderRoutine()
+    //{
+    //    _collider.enabled = false;
+    //    yield return new WaitForSeconds(.5f);
+    //    _collider.enabled = true;
         
-    }
+    //}
 
     public void PowerUp(int weaponType)
     {
@@ -309,6 +317,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
                 default:
                     break;
             }
+            UIManager.Instance.WeaponUpdate((int)_currentWeapon);
         }
         UIManager.Instance.StrengthUpdate(Health);
         Debug.Log("Powered up to " + Health + " strength!");

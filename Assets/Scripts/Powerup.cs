@@ -11,8 +11,7 @@ public class Powerup : MonoBehaviour
     {
         Blaster,
         MegaBlast,
-        BlastWave,
-        //BlackHole
+        BlastWave
     };
     [SerializeField]
     Weapon _weaponType;
@@ -23,7 +22,7 @@ public class Powerup : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Powerup obtained.");
+        Debug.Log(_weaponType + "Powerup obtained");
         Player player = other.GetComponent<Player>();
         player.PowerUp((int)_weaponType);
         Destroy(this.gameObject);
