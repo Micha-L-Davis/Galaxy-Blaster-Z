@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4971970993752076075, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8452146
+      objectReference: {fileID: 0}
+    - target: {fileID: -4971970993752076075, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.56572866
+      objectReference: {fileID: 0}
+    - target: {fileID: -4971970993752076075, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
+      propertyPath: m_Center.x
+      value: -0.091814935
+      objectReference: {fileID: 0}
+    - target: {fileID: -4971970993752076075, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
+      propertyPath: m_Center.y
+      value: -0.024936438
+      objectReference: {fileID: 0}
     - target: {fileID: 1385934540488437049, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -66,6 +82,10 @@ PrefabInstance:
     - target: {fileID: 2990724380115175761, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867324268390499975, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
+      propertyPath: _isEnemyBlast
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6676004953459745510, guid: d9e5c862262c0174bb1883886d6c19b6, type: 3}
       propertyPath: m_Materials.Array.size

@@ -22,7 +22,6 @@ public class Powerup : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(_weaponType + "Powerup obtained");
         Player player = other.GetComponent<Player>();
         player.PowerUp((int)_weaponType);
         Destroy(this.gameObject);

@@ -56,6 +56,9 @@ public class UIManager : MonoBehaviour
         {
             _weaponRankImages[strength+1].gameObject.SetActive(false);
         }
+
+        //if (!_weaponRankImages[strength - 1].IsActive())
+        //    _weaponRankImages[strength - 1].gameObject.SetActive(true);
     }
 
     public void ScoreUpdate(int score)

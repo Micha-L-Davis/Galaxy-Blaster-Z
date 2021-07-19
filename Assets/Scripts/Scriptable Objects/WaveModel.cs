@@ -11,8 +11,6 @@ public class WaveModel : ScriptableObject
     [SerializeField]
     int waveFlightPattern;
     [Header("Optional")]
-    [SerializeField]
-    public GameObject powerupToDrop;
     public List<GameObject> spawned;
     float _intervalDuration;
 

@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected int _health;
     [SerializeField]
     protected bool _concealed;
-    [SerializeField]
     protected Player _player;
     [SerializeField]
     protected List<Transform> _blastOrigins;
@@ -20,8 +19,6 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     public bool dropsPowerup;
     [SerializeField]
     public Animator anim;
-    [SerializeField]
-    SpawnManager _spawnManager;
     [SerializeField]
     List<Animator> _explosionAnimators;
     [SerializeField]
@@ -33,7 +30,14 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     [SerializeField]
     public int scoreValue;
     
-
+    protected virtual void Start()
+    {
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        if (_player == null)
+        {
+            Debug.LogError("Player is null!");
+        }
+    }
 
     protected enum WeaponStrength
     {
@@ -72,18 +76,10 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
             _audio.clip = _explosionClip;
             _audio.Play();
             OnEnemyDeath?.Invoke(this.gameObject);
-            //if (dropsPowerup)
-            //{
-            //    SpawnPowerup();
-            //}
             Destroy(this.gameObject, 0.3f);
         }
     }
 
-    //void SpawnPowerup()
-    //{
-    //    Instantiate(_spawnManager.waves[_spawnManager.currentWave].powerupToDrop, transform.position, Quaternion.identity);
-    //}
 
     protected void OnTriggerEnter(Collider other)
     {

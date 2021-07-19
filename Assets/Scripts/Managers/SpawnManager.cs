@@ -44,14 +44,10 @@ public class SpawnManager : MonoBehaviour
         yield return UIManager.Instance.WaveUpdateRoutine(currentWave);
         while (!_stopSpawning)
         {
-            Debug.Log("Spawning " + waves.Count + " waves.");
             yield return waves[currentWave].LaunchInterval();
-            Debug.Log(waves[currentWave].name + " launched.");
             yield return new WaitForSeconds(.5f);
             yield return new WaitWhile(waves[currentWave].EnemyisAlive);
-            Debug.Log("Wave Eliminated.");
             currentWave++;
-            Debug.Log("Next wave is " + currentWave);
             if (currentWave > waves.Count - 1)
             {
                 _stopSpawning = true;

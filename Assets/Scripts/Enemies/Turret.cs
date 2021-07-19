@@ -8,8 +8,9 @@ public class Turret : Enemy
     [SerializeField]
     float _rapidfireRate = 0.125f;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         _currentStrength = WeaponStrength.Advanced;
     }
 
@@ -32,10 +33,8 @@ public class Turret : Enemy
             yield return new WaitForSeconds(Random.Range(2f, 4f));
             if (!_concealed)
             {
-                Debug.Log("Firing Turrets!");
                 for (int i = 0; i <= (int)_currentStrength; i++)
                 {
-                    Debug.Log(transform.name + " firing!");
                     var blast = PoolManager.Instance.RequestPoolObject(PoolManager.Instance.enemyBlastPool, PoolManager.Instance.enemyBlastPrefab, PoolManager.Instance.enemyBlastContainer);
                     blast.transform.position = _blastOrigins[0].position;
                     var velocity = _blastOrigins[0].forward * _blastForce;

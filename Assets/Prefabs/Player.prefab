@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 3612426942909792357}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -381,6 +381,7 @@ MonoBehaviour:
   _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
   _blasterClip: {fileID: 8300000, guid: 9cae9bcacefe06a4c80409d424641fb9, type: 3}
   _powerupClip: {fileID: 8300000, guid: 9ef1d2db0514cab438d83e2564dd5e6b, type: 3}
+  _damageClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
   _audio: {fileID: 3612426942909792357}
   _score: 0
   _megaBlastPrefabs:
@@ -402,7 +403,7 @@ MonoBehaviour:
   - {fileID: 1519090708}
   - {fileID: 2011530243}
   _collider: {fileID: 490200859}
-  _camera: {fileID: 5876152176238435281, guid: 5ad5fe3daf8615f46aab4467795f4d27, type: 3}
+  _hitCooldown: 0.5
   _currentStrength: 0
   _currentWeapon: 0
 --- !u!33 &4851865327172240716
@@ -512,7 +513,19 @@ MonoBehaviour:
     m_ActionId: 9a253ee2-5c15-49cb-8f01-adbb2e44d82f
     m_ActionName: Player/Fire[/Mouse/leftButton,/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 600411040252628328}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c767e717-08ac-4f8f-88d1-5c4def8f971b
     m_ActionName: Player/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0

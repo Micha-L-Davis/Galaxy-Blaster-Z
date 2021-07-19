@@ -27,7 +27,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     [SerializeField]
     List<Animator> _explosionAnimators;
     [SerializeField]
-    AudioClip _explosionClip, _blasterClip, _powerupClip;
+    AudioClip _explosionClip, _blasterClip, _powerupClip, _damageClip;
     [SerializeField]
     AudioSource _audio;
     [SerializeField]
@@ -41,11 +41,11 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     GameObject _target;
     [SerializeField]
     Collider _collider;
-    [SerializeField]
     CameraShake _camera;
     [SerializeField]
     float _hitCooldown = 0.5f;
     float _canBeHit = -1;
+
 
 
     public float Speed => _speed;
@@ -80,6 +80,9 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         _rapidfireWait = new WaitForSeconds(_rapidfireRate);
         Enemy.OnEnemyDeath += AddScore;
         UIManager.Instance.StrengthUpdate((int)_currentStrength);
+        _camera = Camera.main.GetComponent<CameraShake>();
+        if (_camera == null)
+            Debug.LogError("Main Camera Shake Script is Null");
     }
 
     // Update is called once per frame
@@ -258,7 +261,10 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         if (Time.time > _canBeHit)
         {
             _canBeHit = _hitCooldown + Time.time;
-            _camera.ShakeCamera(.05f);
+            if (_camera != null)
+                _camera.ShakeCamera(.05f);
+            _audio.clip = _damageClip;
+            _audio.Play();
             _currentStrength -= damage;
             if (Health >= 2)
             {
@@ -267,7 +273,6 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             }
             //StartCoroutine(DisableColliderRoutine());
             UIManager.Instance.StrengthUpdate((int)_currentStrength);
-            Debug.Log("Hit taken, current strength is " + _currentStrength);
             if (Health < 0)
             {
                 foreach (var anim in _explosionAnimators)
@@ -320,7 +325,6 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             UIManager.Instance.WeaponUpdate((int)_currentWeapon);
         }
         UIManager.Instance.StrengthUpdate(Health);
-        Debug.Log("Powered up to " + Health + " strength!");
     }
 
     void AddScore(GameObject enemy)

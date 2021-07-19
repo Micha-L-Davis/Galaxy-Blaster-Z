@@ -19,7 +19,7 @@ public class Blast : MonoBehaviour, IDamageable
 
     private void Start()
     {
-        switch (PlayerPrefs.GetInt("Difficulty"))
+        switch (PlayerPrefs.GetInt("Difficulty", 1))
         {
             case 1:
                 if (_isEnemyBlast)
@@ -82,7 +82,8 @@ public class Blast : MonoBehaviour, IDamageable
         {
             Debug.Log(this.gameObject.name + " hit " + other.gameObject.name);
             i.Damage(_damage);
-            Instantiate(_hitEffect, new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z -4), Quaternion.identity, other.transform);
+            if (other.GetComponent<Blast>() == null)
+                Instantiate(_hitEffect, new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z -4), Quaternion.identity);
         }
     }
 }
