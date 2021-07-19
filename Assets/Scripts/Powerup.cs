@@ -12,7 +12,7 @@ public class Powerup : MonoBehaviour
         Blaster,
         MegaBlast,
         BlastWave,
-        BlackHole
+        //BlackHole
     };
     [SerializeField]
     Weapon _weaponType;

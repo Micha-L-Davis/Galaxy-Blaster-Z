@@ -26,6 +26,11 @@ public class SpawnManager : MonoBehaviour
     Player _player;
     [SerializeField]
     GameObject _bigBadBossPrefab;
+    [SerializeField]
+    List<GameObject> _powerUpPrefabs;
+    [SerializeField]
+    int _checkPointWave = 7;
+
 
     private void Start()
     {
@@ -36,8 +41,7 @@ public class SpawnManager : MonoBehaviour
 
     IEnumerator SpawnWaveRoutine()
     {
-        //come back to this later when we have a UI Manager to display the wave number
-        //yield return UI.WaveDisplayRoutine();
+        yield return UIManager.Instance.WaveUpdateRoutine(currentWave);
         while (!_stopSpawning)
         {
             Debug.Log("Spawning " + waves.Count + " waves.");
@@ -50,29 +54,30 @@ public class SpawnManager : MonoBehaviour
             Debug.Log("Next wave is " + currentWave);
             if (currentWave > waves.Count - 1)
             {
-                //Debug.Log("That's not a valid next wave. We're done here.");
                 _stopSpawning = true;
                 Instantiate(_bigBadBossPrefab);
-                //instantiate final boss
+                AudioManager.Instance.BossMusic();
             }
+            else
+                yield return UIManager.Instance.WaveUpdateRoutine(currentWave);
         }
     }
 
     void SpawnPowerup(GameObject obj)
     {
         Enemy enemy = obj.GetComponent<Enemy>();
-        if (enemy.dropsPowerup && _player.Health < 3)
+        if (enemy.dropsPowerup)
         {
-            Instantiate(waves[currentWave].powerupToDrop, enemy.transform.position, Quaternion.identity);
+            if (_player.Health < 3)
+            {
+                Instantiate(_powerUpPrefabs[0], obj.transform.position, Quaternion.identity);
+            }
+            else
+            {
+                int r = UnityEngine.Random.Range(0, 3);
+                Instantiate(_powerUpPrefabs[r], obj.transform.position, Quaternion.identity);
+            }
         }
-        else
-        {
-            int r = UnityEngine.Random.Range(1, 4);
-            //roll a random number between 1-3
-
-            //instantiate weapon upgrade 1, 2 or 3.
-        }
-        
     }
 
     void Respawn()
@@ -85,8 +90,14 @@ public class SpawnManager : MonoBehaviour
             Destroy(item.gameObject, 0.25f);
         }
         waves[currentWave].spawned.Clear();
-        if (currentWave > 8)
-            currentWave = 9;
+        if (currentWave > _checkPointWave)
+            currentWave = _checkPointWave + 1;
+        else if (currentWave > waves.Count - 1)
+        {
+            _stopSpawning = true;
+            Instantiate(_bigBadBossPrefab);
+            AudioManager.Instance.BossMusic();
+        }
         else
             currentWave = 0;
     }

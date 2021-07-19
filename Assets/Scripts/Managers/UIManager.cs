@@ -23,22 +23,28 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     List<Image> _weaponRankImages;
     [SerializeField]
-    List<Image> _currentWeaponImage;
+    List<Sprite> _weaponImages;
+    [SerializeField]
+    Image _currentWeaponImage;
     [SerializeField]
     List<GameObject> _canvasPanels; //0 - Pause, 1 - Game Over, 2 - Victory
     [SerializeField]
     GameObject _waveIndicator;
     [SerializeField]
     Text _waveText;
+    [SerializeField]
+    Text _finalScoreText;
     
     public void StrengthUpdate(int strength)
     {
         if (strength <= -1)
         {
             _weaponRankImages[0].gameObject.SetActive(false);
-            _canvasPanels[1].gameObject.SetActive(true);
+            StartCoroutine(PlayerDeathRoutine());
             return;
         }
+        if (strength > 6)
+            return;
 
         if (!_weaponRankImages[strength].IsActive())
         {
@@ -55,28 +61,33 @@ public class UIManager : MonoBehaviour
     public void ScoreUpdate(int score)
     {
         _scoreText.text = "" + score;
+        _finalScoreText.text = "FINAL SCORE: " + score;
     }
 
     public void WeaponUpdate(int weapon)
     {
-
+        _currentWeaponImage.sprite = _weaponImages[weapon];
     }
 
-    public IEnumerator WaveUpdate(int waveNumber)
+    public IEnumerator WaveUpdateRoutine(int waveNumber)
     {
+        waveNumber++;
         _waveIndicator.SetActive(true);
         _waveText.text = "WAVE " + waveNumber + " INCOMING!";
         yield return new WaitForSeconds(2.5f);
+        _waveIndicator.SetActive(false);
     }
 
     public void Restart()
     {
+        Time.timeScale = 1;
         StartCoroutine(SpawnManager.Instance.RespawnPlayerRoutine());
+        AudioManager.Instance.BGM();
         foreach (var item in _canvasPanels)
         {
             item.gameObject.SetActive(false);
         }
-        
+        _scoreText.text = "0000000";
         
     }
 
@@ -101,6 +112,14 @@ public class UIManager : MonoBehaviour
     {
         _canvasPanels[2].gameObject.SetActive(true);
     }
+
+    IEnumerator PlayerDeathRoutine()
+    {
+        Time.timeScale = 0.5f;
+        yield return new WaitForSeconds(0.4f);
+        _canvasPanels[1].gameObject.SetActive(true);
+    }
+
 
     private void Awake()
     {

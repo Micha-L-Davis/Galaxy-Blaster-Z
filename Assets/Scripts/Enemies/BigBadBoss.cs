@@ -25,7 +25,8 @@ public class BigBadBoss : MonoBehaviour
 
     void RemoveTurret(GameObject turret)
     {
-        Instantiate(_smokeCloudPrefab, turret.transform.position, Quaternion.identity, this.transform);
+        GameObject smoke = Instantiate(_smokeCloudPrefab, turret.transform.position, Quaternion.identity, this.transform);
+        smoke.transform.localScale = new Vector3(.1f, .1f, .1f);
         _turretLists[_phase].Remove(turret);
         if (_turretLists[_phase].Count == 0)
         {
@@ -42,14 +43,6 @@ public class BigBadBoss : MonoBehaviour
 
     }
 
-    //private void RotationCorrection()
-    //{
-    //    foreach (var item in _turretLists[0])
-    //    {
-    //        item.GetComponent<Turret>().CorrectRotation(-transform.up);
-    //    }
-
-    //}
 
     void UpdatePhase()
     {

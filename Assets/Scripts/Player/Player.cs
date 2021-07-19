@@ -32,6 +32,18 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     AudioSource _audio;
     [SerializeField]
     int _score;
+    [SerializeField]
+    List<GameObject> _megaBlastPrefabs, _waveBlastPrefabs;
+    [SerializeField]
+    GameObject _blackHolePrefab;
+    [SerializeField]
+    List<Transform> _waveOrigins, _blackHoleOrigins;
+    GameObject _target;
+    [SerializeField]
+    Collider _collider;
+    [SerializeField]
+    CameraShake _camera;
+
 
     public float Speed => _speed;
 
@@ -52,7 +64,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         Blaster,
         MegaBlast,
         BlastWave,
-        BlackHole
+        //BlackHole
     };
     [SerializeField]
     Weapon _currentWeapon = Weapon.Blaster;
@@ -80,17 +92,22 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
 
     public void OnFire(InputAction.CallbackContext context)
     {
-        if (context.ReadValueAsButton())
+        if (context.ReadValueAsButton() && Time.time > _canBlast)
         {
             switch (_currentWeapon)
             {
                 case Weapon.Blaster:
-                    if (Time.time > _canBlast)
-                    {
                         StartCoroutine(BlasterFireRoutine());
-                    }
-
                     break;
+                case Weapon.MegaBlast:
+                        FireMegaBlast();
+                    break;
+                case Weapon.BlastWave:
+                        FireBlastWave();
+                    break;
+                //case Weapon.BlackHole:
+                //        FireBlackHoleCannon();
+                //    break;
                 default:
                     break;
             }
@@ -138,13 +155,111 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         }
     }
 
+    void FireMegaBlast()
+    {
+        double n = (int)_currentStrength / 2;
+        _canBlast = Time.time + _blastCooldown;
+        GameObject obj = Instantiate(_megaBlastPrefabs[(int)Math.Floor(n)], _blastOrigin.transform.position, Quaternion.identity);
+        obj.transform.position = _blastOrigin.position;
+        var velocity = _blastOrigin.forward * _blastForce;
+        obj.GetComponent<Blast>().FireBlast(velocity);
+        _audio.clip = _blasterClip;
+        _audio.Play();
+
+    }
+
+    void FireBlastWave()
+    {
+        _canBlast = Time.time + _blastCooldown;
+        GameObject obj;
+        Vector3 velocity;
+        switch (_currentStrength)
+        {
+            case WeaponStrength.SuperBasic:
+                obj = Instantiate(_waveBlastPrefabs[0], _waveOrigins[0].position, Quaternion.identity);
+                obj.transform.position = _waveOrigins[0].position;
+                velocity = _waveOrigins[0].forward * _blastForce;
+                obj.GetComponent<Blast>().FireBlast(velocity);
+                _audio.clip = _blasterClip;
+                _audio.Play();
+                obj = Instantiate(_waveBlastPrefabs[1], _waveOrigins[1].position, Quaternion.identity);
+                obj.transform.position = _waveOrigins[1].position;
+                velocity = _waveOrigins[1].forward * _blastForce;
+                obj.GetComponent<Blast>().FireBlast(velocity);
+                _audio.clip = _blasterClip;
+                _audio.Play();
+                break;
+            case WeaponStrength.SuperIntermediate:
+                foreach (var origin in _waveOrigins)
+                {
+                    int i = 0;
+                    obj = Instantiate(_waveBlastPrefabs[i], origin.position, Quaternion.identity);
+                    obj.transform.position = origin.position;
+                    velocity = origin.forward * _blastForce;
+                    obj.GetComponent<Blast>().FireBlast(velocity);
+                    _audio.clip = _blasterClip;
+                    _audio.Play();
+                    i++;
+                }
+                break;
+            case WeaponStrength.SuperAdvanced:
+                foreach (var origin in _waveOrigins)
+                {
+                    int i = 0;
+                    obj = Instantiate(_waveBlastPrefabs[i], origin.position, Quaternion.identity);
+                    obj.transform.position = origin.position;
+                    velocity = origin.forward * _blastForce;
+                    obj.GetComponent<Blast>().FireBlast(velocity);
+                    _audio.clip = _blasterClip;
+                    _audio.Play();
+                    i++;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    //void FireBlackHoleCannon()
+    //{
+    //    _target = ClosestEnemy();
+
+    //    foreach (var item in _blackHoleOrigins)
+    //    {
+    //        var hole = Instantiate(_blackHolePrefab, item.position, Quaternion.identity);
+    //        hole.transform.position = item.position;
+    //        hole.GetComponent<BlackHole>().SetTarget(_target, (int)_currentStrength);
+    //        _audio.clip = _blasterClip;
+    //        _audio.Play();
+    //    }
+    //}
+
+    //private GameObject ClosestEnemy()
+    //{
+    //    List<GameObject> enemies = SpawnManager.Instance.waves[SpawnManager.Instance.currentWave].spawned;
+    //    float minDistance = Mathf.Infinity;
+    //    foreach (var e in enemies)
+    //    {
+    //        float distance = Vector3.Distance(e.transform.position, transform.position);
+    //        if (distance < minDistance)
+    //        {
+    //            _target = e;
+    //            minDistance = distance;
+    //        }
+    //    }
+
+    //    return _target;
+    //}
+
     public void Damage()
     {
+        _camera.ShakeCamera(.05f);
         if (Health == 4)
         {
             _currentWeapon = Weapon.Blaster;
         }       
         _currentStrength--;
+        StartCoroutine(DisableColliderRoutine());
         UIManager.Instance.StrengthUpdate((int)_currentStrength);
         Debug.Log("Hit taken, current strength is " + _currentStrength);
         if (Health < 0)
@@ -157,8 +272,16 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             OnPlayerDeath?.Invoke();
             _audio.Play();
             isDead = true;
-            Destroy(this.gameObject, 0.33f);
+            Destroy(this.gameObject, 0.4f);
         }
+    }
+
+    IEnumerator DisableColliderRoutine()
+    {
+        _collider.enabled = false;
+        yield return new WaitForSeconds(.5f);
+        _collider.enabled = true;
+        
     }
 
     public void PowerUp(int weaponType)
@@ -172,20 +295,17 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             switch (weaponType)
             {
                 case 0:
-                    _currentStrength = WeaponStrength.Advanced;
+                    _currentStrength++;
                     break;
                 case 1:
                     _currentWeapon = Weapon.MegaBlast;
-                    //update UI with image
                     break;
                 case 2:
                     _currentWeapon = Weapon.BlastWave;
-                    //update UI with image
                     break;
-                case 3:
-                    _currentWeapon = Weapon.BlackHole;
-                    //update UI with image
-                    break;
+                //case 3:
+                //    _currentWeapon = Weapon.BlackHole;
+                //    break;
                 default:
                     break;
             }

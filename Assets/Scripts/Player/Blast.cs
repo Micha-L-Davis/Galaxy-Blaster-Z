@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Blast : MonoBehaviour, IDamageable
 {
-    [SerializeField]
     Vector3 _velocity;
     int _health;
     [SerializeField]
     Rigidbody _rigidbody;
+    [SerializeField]
+    float _rotationSpeed = 30;
 
     public int Health => _health;
 
@@ -26,7 +27,12 @@ public class Blast : MonoBehaviour, IDamageable
     private void Update()
     {
         _rigidbody.velocity = _velocity;
-        if (transform.position.x > 32 || transform.position.x < -36)
+        //Vector3 desiredRotation = Quaternion.LookRotation(_rigidbody.velocity, transform.up).eulerAngles;
+        //Vector3 rotation = desiredRotation - _rigidbody.rotation.eulerAngles;
+        //rotation.Normalize();
+        //rotation *= _rotationSpeed;
+        //_rigidbody.AddTorque(rotation);
+        if (transform.position.x > 32 || transform.position.x < -36 || transform.position.y > 20 || transform.position.y < -20)
             gameObject.SetActive(false);
     }
 
