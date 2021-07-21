@@ -164,7 +164,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     {
         double n = (int)_currentStrength / 2;
         _canBlast = Time.time + _blastCooldown;
-        GameObject obj = Instantiate(_megaBlastPrefabs[(int)Math.Floor(n)], _blastOrigin.transform.position, Quaternion.identity);
+        GameObject obj = Instantiate(_megaBlastPrefabs[(int)Math.Floor(n)-1], _blastOrigin.transform.position, Quaternion.identity);
         obj.transform.position = _blastOrigin.position;
         var velocity = _blastOrigin.forward * _blastForce;
         obj.GetComponent<Blast>().FireBlast(velocity);
@@ -266,6 +266,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             _audio.clip = _damageClip;
             _audio.Play();
             _currentStrength -= damage;
+            Debug.Log("Took " + damage + " damage. Current health: " + (int)_currentStrength);
             if (Health >= 2)
             {
                 _currentWeapon = Weapon.Blaster;
@@ -303,7 +304,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
         _audio.clip = _powerupClip;
         _audio.Play();
         _currentStrength++;
-        if ((int)_currentStrength > 3)
+        if ((int)_currentStrength > 2)
         {
             switch (weaponType)
             {
@@ -324,6 +325,8 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             }
             UIManager.Instance.WeaponUpdate((int)_currentWeapon);
         }
+        if ((int)_currentStrength > 5)
+            _currentStrength = WeaponStrength.SuperAdvanced;
         UIManager.Instance.StrengthUpdate(Health);
     }
 

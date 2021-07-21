@@ -163,6 +163,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
+  _damage: 0
+  _isEnemyBlast: 0
+  _hitEffect: {fileID: 886484012436921512, guid: 374c6d4fd2d226445a9ab068564199d7, type: 3}
 --- !u!54 &-987504581228654176
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -37,25 +37,47 @@ public class UIManager : MonoBehaviour
     
     public void StrengthUpdate(int strength)
     {
-        if (strength <= -1)
-        {
-            _weaponRankImages[0].gameObject.SetActive(false);
-            StartCoroutine(PlayerDeathRoutine());
-            return;
-        }
-        if (strength > 6)
-            return;
 
-        if (!_weaponRankImages[strength].IsActive())
+        switch (strength)
         {
-            _weaponRankImages[strength].gameObject.SetActive(true);
-            return;
+            case int n when n < 0:
+                _weaponRankImages[0].gameObject.SetActive(false);
+                StartCoroutine(PlayerDeathRoutine());
+                break;
+            default:
+                for (int i = _weaponRankImages.Count-1; i > strength; i--)
+                {
+                    if (_weaponRankImages[i].gameObject.activeInHierarchy)
+                    {
+                        _weaponRankImages[i].gameObject.SetActive(false);
+                    }
+
+                }
+                for (int i = 0; i <= strength; i++)
+                {
+                    if (!_weaponRankImages[i].gameObject.activeInHierarchy)
+                    {
+                        _weaponRankImages[i].gameObject.SetActive(true);
+                    }
+                }
+                break;
+            case int n when n > 5:
+                break;
         }
 
-        if (_weaponRankImages[strength+1].IsActive())
-        {
-            _weaponRankImages[strength+1].gameObject.SetActive(false);
-        }
+        //if (strength > 6)
+        //    return;
+
+        //if (!_weaponRankImages[strength].IsActive())
+        //{
+        //    _weaponRankImages[strength].gameObject.SetActive(true);
+        //    return;
+        //}
+
+        //if (_weaponRankImages[strength+1].IsActive())
+        //{
+        //    _weaponRankImages[strength+1].gameObject.SetActive(false);
+        //}
 
         //if (!_weaponRankImages[strength - 1].IsActive())
         //    _weaponRankImages[strength - 1].gameObject.SetActive(true);
