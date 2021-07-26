@@ -11,9 +11,11 @@ public class Blast : MonoBehaviour, IDamageable
     [SerializeField]
     int _damage;
     [SerializeField]
-    bool _isEnemyBlast;
+    int _bonusDamage;
     [SerializeField]
-    GameObject _hitEffect;
+    bool _isEnemyBlast;
+    //[SerializeField]
+    //GameObject _hitEffect;
 
     public int Health => _health;
 
@@ -28,23 +30,23 @@ public class Blast : MonoBehaviour, IDamageable
                 }
                 else
                 {
-                    _damage = 3;
+                    _damage = 2;
                 }
                 break;
             case 2:
                 if (_isEnemyBlast)
                 {
-                    _damage = 2;
+                    _damage = 1;
                 }
                 else
                 {
-                    _damage = 2;
+                    _damage = 1;
                 }
                 break;
             case 3:
                 if (_isEnemyBlast)
                 {
-                    _damage = 3;
+                    _damage = 2;
                 }
                 else
                 {
@@ -81,9 +83,9 @@ public class Blast : MonoBehaviour, IDamageable
         if (i != null)
         {
             Debug.Log(this.gameObject.name + " hit " + other.gameObject.name);
-            i.Damage(_damage);
-            if (other.GetComponent<Blast>() == null)
-                Instantiate(_hitEffect, new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z -4), Quaternion.identity);
+            i.Damage(_damage + _bonusDamage);
+            //if (other.GetComponent<Blast>() == null)
+            //    Instantiate(_hitEffect, new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z -4), Quaternion.identity);
         }
     }
 }

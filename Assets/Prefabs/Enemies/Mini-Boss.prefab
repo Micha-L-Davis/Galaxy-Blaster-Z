@@ -1095,9 +1095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2644d499c8a17cd49b97790de8d6d3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 10
+  _health: 30
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 5771783292134124547}
   - {fileID: 6253874722453915096}
@@ -1108,7 +1107,6 @@ MonoBehaviour:
   _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 6707181660631461997}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 8663364955664938036}
   - {fileID: 8663364955121229020}
@@ -1125,6 +1123,8 @@ MonoBehaviour:
   _audio: {fileID: 7000161085748799014}
   _collider: {fileID: 9194244726559596673}
   scoreValue: 1025
+  _meshRenderer: {fileID: 4413350955973302051}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 0
 --- !u!82 &7000161085748799014
 AudioSource:

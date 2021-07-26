@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,6 +30,11 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
     protected Collider _collider;
     [SerializeField]
     public int scoreValue;
+    [SerializeField]
+    protected MeshRenderer _meshRenderer;
+    [SerializeField]
+    protected Material _flashMaterial;
+    WaitForSeconds _flashWait = new WaitForSeconds(.125f);
     
     protected virtual void Start()
     {
@@ -78,9 +84,21 @@ public class Enemy : MonoBehaviour, IDamageable, IConcealable
             OnEnemyDeath?.Invoke(this.gameObject);
             Destroy(this.gameObject, 0.3f);
         }
+        StartCoroutine(DamageFlashRoutine());
     }
 
+    protected IEnumerator DamageFlashRoutine()
+    {
+        Material m = _meshRenderer.material;
+        for (int i = 0; i < 5; i++)
+        {
+            _meshRenderer.material = _flashMaterial;
+            yield return _flashWait;
+            _meshRenderer.material = m;
+            yield return _flashWait;
+        }
 
+    }
     protected void OnTriggerEnter(Collider other)
     {
         IDamageable i = other.GetComponent<IDamageable>();

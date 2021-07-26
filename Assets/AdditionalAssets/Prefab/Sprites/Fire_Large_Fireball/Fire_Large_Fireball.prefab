@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4857797128114443517}
   - component: {fileID: 5837855936394250608}
   - component: {fileID: 4941998688585850412}
+  - component: {fileID: 5166074359924127935}
   m_Layer: 7
   m_Name: Fire_Large_Fireball
   m_TagString: Untagged
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 4941998688585850412}
   _damage: 0
+  _bonusDamage: 5
   _isEnemyBlast: 0
   _hitEffect: {fileID: 886484012436921512, guid: 374c6d4fd2d226445a9ab068564199d7, type: 3}
 --- !u!54 &4941998688585850412
@@ -79,6 +81,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &5166074359924127935
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674436640797044400}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44725e2989ef247b2881df6775560865, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7979065151476118707
 GameObject:
   m_ObjectHideFlags: 0

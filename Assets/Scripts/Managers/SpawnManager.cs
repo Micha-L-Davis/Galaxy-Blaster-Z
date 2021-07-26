@@ -30,6 +30,8 @@ public class SpawnManager : MonoBehaviour
     List<GameObject> _powerUpPrefabs;
     [SerializeField]
     int _checkPointWave = 7;
+    [SerializeField]
+    AudioClip _powerupDroppedClip;
 
 
     private void Start()
@@ -73,6 +75,7 @@ public class SpawnManager : MonoBehaviour
                 int r = UnityEngine.Random.Range(0, 3);
                 Instantiate(_powerUpPrefabs[r], obj.transform.position, Quaternion.identity);
             }
+            AudioManager.Instance.PlayAudio(_powerupDroppedClip);
         }
     }
 

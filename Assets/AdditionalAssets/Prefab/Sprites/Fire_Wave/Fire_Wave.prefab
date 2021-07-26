@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 117914922039808635}
   - component: {fileID: -4519849337128934775}
   - component: {fileID: 5168003973362574518}
+  - component: {fileID: 4809606831288699021}
   m_Layer: 7
   m_Name: Fire_Wave
   m_TagString: Untagged
@@ -163,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 5168003973362574518}
   _damage: 0
+  _bonusDamage: 2
   _isEnemyBlast: 0
   _hitEffect: {fileID: 886484012436921512, guid: 374c6d4fd2d226445a9ab068564199d7, type: 3}
 --- !u!54 &5168003973362574518
@@ -181,3 +183,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &4809606831288699021
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5551080029881815029}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d7e9dfffb54ef4f15899210b7f4f2946, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

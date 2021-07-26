@@ -15,8 +15,10 @@ public class AudioManager : MonoBehaviour
             return _instance;
         }
     }
-
-    AudioSource _source;
+    [SerializeField]
+    AudioSource _bgmSource;
+    [SerializeField]
+    AudioSource _sfxSource;
     [SerializeField]
     AudioClip _gameOverClip, _levelStartClip, _bossMusicClip, _victoryClip;
     
@@ -24,38 +26,37 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Player.OnPlayerDeath += GameOverAudio;
-        _source = GetComponent<AudioSource>();
         BGM();
     }
 
     public void BGM()
     {
-        _source.clip = _levelStartClip;
-        _source.Play();
+        _bgmSource.clip = _levelStartClip;
+        _bgmSource.Play();
     }
 
     public void BossMusic()
     {
-        _source.clip = _bossMusicClip;
-        _source.Play();
+        _bgmSource.clip = _bossMusicClip;
+        _bgmSource.Play();
     }
 
     void GameOverAudio()
     {
-        _source.clip = _gameOverClip;
-        _source.Play();
+        _bgmSource.clip = _gameOverClip;
+        _bgmSource.Play();
     }
 
     void VictoryAudio()
     {
-        _source.clip = _victoryClip;
-        _source.Play();
+        _bgmSource.clip = _victoryClip;
+        _bgmSource.Play();
     }
 
     public void PlayAudio(AudioClip clip)
     {
-        _source.clip = clip;
-        _source.Play();
+        _sfxSource.clip = clip;
+        _sfxSource.Play();
     }
 
     private void Awake()

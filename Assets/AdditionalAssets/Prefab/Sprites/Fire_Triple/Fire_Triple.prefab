@@ -79,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 6121564179817461685}
   _damage: 0
+  _bonusDamage: 4
   _isEnemyBlast: 0
   _hitEffect: {fileID: 886484012436921512, guid: 374c6d4fd2d226445a9ab068564199d7, type: 3}
 --- !u!1001 &581250383435187798
@@ -136,8 +137,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire_Single
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7951806550133069736, guid: 5ab6f89cce33049e78cc4bab1334d150, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ab6f89cce33049e78cc4bab1334d150, type: 3}
 --- !u!4 &2000714532539661778 stripped
 Transform:

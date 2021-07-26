@@ -27,7 +27,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     [SerializeField]
     List<Animator> _explosionAnimators;
     [SerializeField]
-    AudioClip _explosionClip, _blasterClip, _powerupClip, _damageClip;
+    AudioClip _explosionClip, _blasterClip, _powerupClip, _damageClip, _weaponChangeClip;
     [SerializeField]
     AudioSource _audio;
     [SerializeField]
@@ -45,7 +45,6 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
     [SerializeField]
     float _hitCooldown = 0.5f;
     float _canBeHit = -1;
-
 
 
     public float Speed => _speed;
@@ -269,6 +268,7 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             Debug.Log("Took " + damage + " damage. Current health: " + (int)_currentStrength);
             if (Health >= 2)
             {
+                AudioManager.Instance.PlayAudio(_weaponChangeClip);
                 _currentWeapon = Weapon.Blaster;
                 UIManager.Instance.WeaponUpdate((int)_currentWeapon);
             }
@@ -309,12 +309,15 @@ public class Player : MonoBehaviour, Control.IPlayerActions, IDamageable
             switch (weaponType)
             {
                 case 0:
-                    _currentStrength++;
                     break;
                 case 1:
+                    _audio.clip = _weaponChangeClip;
+                    _audio.Play();
                     _currentWeapon = Weapon.MegaBlast;
                     break;
                 case 2:
+                    _audio.clip = _weaponChangeClip;
+                    _audio.Play();
                     _currentWeapon = Weapon.BlastWave;
                     break;
                 //case 3:

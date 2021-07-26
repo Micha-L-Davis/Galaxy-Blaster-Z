@@ -378,10 +378,11 @@ MonoBehaviour:
   - {fileID: 2410800833244020766}
   - {fileID: 94448964305205606}
   - {fileID: 94448964412613351}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 8b18513791b2bd24583aeb18f9052e23, type: 3}
   _blasterClip: {fileID: 8300000, guid: 9cae9bcacefe06a4c80409d424641fb9, type: 3}
   _powerupClip: {fileID: 8300000, guid: 9ef1d2db0514cab438d83e2564dd5e6b, type: 3}
-  _damageClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
+  _damageClip: {fileID: 8300000, guid: 8b18513791b2bd24583aeb18f9052e23, type: 3}
+  _weaponChangeClip: {fileID: 8300000, guid: a045e2b81abcf774abeaa13418ce0280, type: 3}
   _audio: {fileID: 3612426942909792357}
   _score: 0
   _megaBlastPrefabs:
@@ -576,14 +577,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 9e58132d50ebb44459d510596b182b43, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 142
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

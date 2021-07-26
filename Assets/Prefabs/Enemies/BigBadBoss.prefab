@@ -519,20 +519,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017043829819416}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 5541525506226970395}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174542841815}
-  _explosionClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
-  _blasterClip: {fileID: 8300000, guid: 53aba29137ec8044e89210aa40c27879, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
+  _blasterClip: {fileID: 8300000, guid: e1fafee543cb8d74583420717cc04785, type: 3}
   _audio: {fileID: 5541525506226970337}
   _collider: {fileID: 5541525506226970387}
   scoreValue: 425
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!95 &5541525506226970343
@@ -764,20 +764,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042845093160}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 5541525506226970395}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174135430359}
-  _explosionClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
-  _blasterClip: {fileID: 8300000, guid: 53aba29137ec8044e89210aa40c27879, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
+  _blasterClip: {fileID: 8300000, guid: e1fafee543cb8d74583420717cc04785, type: 3}
   _audio: {fileID: 5541525506226970392}
   _collider: {fileID: 5541525506226970397}
   scoreValue: 425
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!95 &5541525506226970399
@@ -1009,20 +1009,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017044059172220}
   _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 5541525506226970395}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174301670152}
-  _explosionClip: {fileID: 8300000, guid: 36c545093b267af4b99ed1c14b125c14, type: 3}
-  _blasterClip: {fileID: 8300000, guid: 53aba29137ec8044e89210aa40c27879, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
+  _blasterClip: {fileID: 8300000, guid: e1fafee543cb8d74583420717cc04785, type: 3}
   _audio: {fileID: 5541525506226970341}
   _collider: {fileID: 5541525506226970393}
   scoreValue: 425
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!95 &5541525506226970395
@@ -1418,20 +1418,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042641973731}
-  _blastForce: 30
+  _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 3924947739438710329}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174089752208}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
-  _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
+  _blasterClip: {fileID: 8300000, guid: 507e8d150cef29044b5d4963b1616a26, type: 3}
   _audio: {fileID: 3924947739438710330}
   _collider: {fileID: 6042544628465710708}
   scoreValue: 725
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6042544628465710708
@@ -2412,15 +2412,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6631017043080958381}
-  m_LocalRotation: {x: -0, y: -0.9999639, z: -0, w: -0.008506715}
-  m_LocalPosition: {x: -1.2320004, y: 0.28000018, z: 0.5930004}
+  m_LocalRotation: {x: -0, y: 0.008503968, z: -0, w: -0.9999639}
+  m_LocalPosition: {x: -1.2577143, y: 0.28000018, z: 0.5930145}
   m_LocalScale: {x: 0.108, y: 0.10800001, z: 0.108000025}
   m_Children:
   - {fileID: 5224921700010782719}
   - {fileID: 6631017043485335107}
   m_Father: {fileID: 5541525506226864840}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: -133.306, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -360.974, z: 0}
 --- !u!33 &6631017043080958370
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2484,20 +2484,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042410341441}
-  _blastForce: 30
+  _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 6631017042570614970}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479173904431632}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
-  _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
+  _blasterClip: {fileID: 8300000, guid: 507e8d150cef29044b5d4963b1616a26, type: 3}
   _audio: {fileID: 6631017042570614971}
   _collider: {fileID: 6631017043080958369}
   scoreValue: 725
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6631017043080958369
@@ -2738,15 +2738,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6631017043185996188}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -2.2450008, y: 0.5, z: -0.448}
+  m_LocalRotation: {x: 0.7071068, y: 0.0000021284159, z: -0.0000021284159, w: -0.7071068}
+  m_LocalPosition: {x: -2.2589588, y: 0.47512543, z: -0.4480247}
   m_LocalScale: {x: 0.048000008, y: 0.048, z: 0.048}
   m_Children:
   - {fileID: 5224921700182705892}
   - {fileID: 6631017043941706946}
   m_Father: {fileID: 5541525506226864840}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -360}
 --- !u!33 &6631017043185996177
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2810,20 +2810,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017044183604508}
   _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 6631017043538380271}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174000857867}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017043538380264}
   _collider: {fileID: 6631017043185996176}
   scoreValue: 1000
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!65 &6631017043185996176
@@ -2837,8 +2837,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.9272885, y: 7.0949287, z: 26.384613}
-  m_Center: {x: 0.000015211603, y: 1.905785, z: -9.727878}
+  m_Size: {x: 6.9272885, y: 7.0949287, z: 46.35857}
+  m_Center: {x: 0.000015211603, y: 1.905785, z: 0.25912073}
 --- !u!1 &6631017043230006835
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,15 +3176,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6631017043526685650}
-  m_LocalRotation: {x: -0.000000032130625, y: -0.9999403, z: 0.00000008940696, w: 0.010937103}
-  m_LocalPosition: {x: -2.026001, y: 1.1610001, z: -0.011999726}
+  m_LocalRotation: {x: -0.00000008940696, y: -0.010939638, z: -0.000000021886079, w: -0.99994016}
+  m_LocalPosition: {x: -2.0221577, y: 1.1610004, z: -0.035414338}
   m_LocalScale: {x: 0.04799999, y: 0.048, z: 0.047999993}
   m_Children:
   - {fileID: 5224921698170488112}
   - {fileID: 6631017043062761834}
   m_Father: {fileID: 5541525506226864840}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: -178.306, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -358.746, z: 0}
 --- !u!33 &6631017043526685655
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3248,20 +3248,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 15
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042894279297}
-  _blastForce: 40
+  _blastForce: 30
   dropsPowerup: 0
   anim: {fileID: 6631017043184700180}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479174675091679}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017043184700181}
   _collider: {fileID: 6631017043526685654}
   scoreValue: 1000
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6631017043526685654
@@ -3275,8 +3275,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.908857, y: 30.143446, z: 9.083349}
-  m_Center: {x: -0.045362864, y: -5.5668163, z: 0.24296492}
+  m_Size: {x: 10.908857, y: 31.795002, z: 9.083349}
+  m_Center: {x: -0.045362867, y: -4.741039, z: 0.24296497}
 --- !u!1 &6631017043538380278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,13 +3304,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6631017043538380278}
-  m_LocalRotation: {x: 0.13127546, y: 0.69481426, z: -0.69481415, w: 0.13127545}
-  m_LocalPosition: {x: -20.854624, y: 4.033328, z: -22.062979}
+  m_LocalRotation: {x: 0.1313208, y: 0.69457424, z: -0.69505405, w: 0.1312301}
+  m_LocalPosition: {x: -20.854624, y: 4.0335417, z: -22.06298}
   m_LocalScale: {x: 0.4444445, y: 0.4444444, z: 0.44444442}
   m_Children: []
   m_Father: {fileID: 9973620929563670}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.04001, y: 180, z: 21.384003}
 --- !u!33 &6631017043538380266
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3502,15 +3502,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6631017043793235394}
-  m_LocalRotation: {x: -0, y: -0.9999639, z: -0, w: -0.008506715}
-  m_LocalPosition: {x: -1.2320004, y: 0.27999985, z: -0.5930003}
+  m_LocalRotation: {x: -0, y: 0.008503969, z: -0, w: -0.9999639}
+  m_LocalPosition: {x: -1.2577019, y: 0.27999985, z: -0.5930033}
   m_LocalScale: {x: 0.108, y: 0.10800001, z: 0.108000025}
   m_Children:
   - {fileID: 5224921698855570806}
   - {fileID: 6631017042592717324}
   m_Father: {fileID: 5541525506226864840}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: -133.306, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -360.974, z: 0}
 --- !u!33 &6631017043793235399
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3574,20 +3574,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017043321813072}
-  _blastForce: 30
+  _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 6631017042924924043}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479175360174233}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
-  _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
+  _blasterClip: {fileID: 8300000, guid: 507e8d150cef29044b5d4963b1616a26, type: 3}
   _audio: {fileID: 6631017042924924052}
   _collider: {fileID: 6631017043793235398}
   scoreValue: 725
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6631017043793235398
@@ -3690,15 +3690,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6631017043900285089}
-  m_LocalRotation: {x: 0.013165856, y: -0.70706457, z: -0.7069842, w: 0.007736442}
-  m_LocalPosition: {x: -2.2454615, y: 0.50000024, z: 0.44799852}
+  m_LocalRotation: {x: -0.70706433, y: -0.013163618, z: -0.0077340193, w: -0.70698446}
+  m_LocalPosition: {x: -2.3289185, y: 0.50495195, z: 0.44801426}
   m_LocalScale: {x: 0.04799999, y: 0.048, z: 0.048}
   m_Children:
   - {fileID: 5224921699192248743}
   - {fileID: 6631017044230584261}
   m_Father: {fileID: 5541525506226864840}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: -178.306, z: 0}
+  m_LocalEulerAnglesHint: {x: -268.307, y: -89.561005, z: -90.00101}
 --- !u!33 &6631017043900285094
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3762,20 +3762,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017042485338603}
   _blastForce: 20
   dropsPowerup: 0
   anim: {fileID: 6631017042778492179}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479173681482824}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
   _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
   _audio: {fileID: 6631017042778492188}
   _collider: {fileID: 6631017043900285093}
   scoreValue: 1000
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 1
   _rapidfireRate: 0.125
 --- !u!65 &6631017043900285093
@@ -4042,15 +4042,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6856892722694876475}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.22700024, y: 0.272, z: -0.7760006}
+  m_LocalRotation: {x: -0, y: -0.0000030134995, z: -0, w: -1}
+  m_LocalPosition: {x: 0.19561768, y: 0.27199996, z: -0.7760042}
   m_LocalScale: {x: 0.10800004, y: 0.10800003, z: 0.10800006}
   m_Children:
   - {fileID: 5224921698708401428}
   - {fileID: 6407814971905172866}
   m_Father: {fileID: 5541525506226864840}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: -158.602, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 0}
 --- !u!33 &1452636270825678110
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4114,20 +4114,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 20
   _concealed: 0
-  _player: {fileID: 600411040252628328, guid: 7621a80d1ca33714fad99b56670e0c22, type: 3}
   _blastOrigins:
   - {fileID: 6631017043887231699}
-  _blastForce: 30
+  _blastForce: 20
   dropsPowerup: 1
   anim: {fileID: 6631017043230006836}
-  _spawnManager: {fileID: 2051288342582283261, guid: 773b54d8267dee0488a7e7bf0041eee4, type: 3}
   _explosionAnimators:
   - {fileID: 2755479175210907899}
-  _explosionClip: {fileID: 8300000, guid: 875ab8b8329618246905b9960b32ff48, type: 3}
-  _blasterClip: {fileID: 8300000, guid: 523712b61e57882459f986b8844214e1, type: 3}
+  _explosionClip: {fileID: 8300000, guid: 87aec859f7253d64391ffbde8b06b7c9, type: 3}
+  _blasterClip: {fileID: 8300000, guid: 507e8d150cef29044b5d4963b1616a26, type: 3}
   _audio: {fileID: 6631017043230006837}
   _collider: {fileID: 6856892722694876474}
   scoreValue: 725
+  _meshRenderer: {fileID: 5541525506224963618}
+  _flashMaterial: {fileID: 2100000, guid: b322fe47d9483e145bc81ef428ac3e08, type: 2}
   _currentStrength: 2
   _rapidfireRate: 0.125
 --- !u!65 &6856892722694876474

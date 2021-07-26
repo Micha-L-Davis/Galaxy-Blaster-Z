@@ -41,7 +41,10 @@ public class UIManager : MonoBehaviour
         switch (strength)
         {
             case int n when n < 0:
-                _weaponRankImages[0].gameObject.SetActive(false);
+                foreach (var image in _weaponRankImages)
+                {
+                    image.gameObject.SetActive(false);
+                }
                 StartCoroutine(PlayerDeathRoutine());
                 break;
             default:
@@ -130,6 +133,7 @@ public class UIManager : MonoBehaviour
 
     public void Quit()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
